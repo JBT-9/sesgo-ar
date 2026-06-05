@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sesgo AR</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f4f0; color: #1a1a1a; }
+
+.header { background: #fff; border-bottom: 1px solid #e0ddd5; padding: 0; }
+.header-inner { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; gap: 0; }
+.logo { font-size: 18px; font-weight: 700; padding: 1rem 0; margin-right: 2rem; letter-spacing: -0.5px; }
+.nav { display: flex; gap: 0; }
+.nav-btn { font-size: 14px; padding: 1.1rem 1.2rem; border: none; background: none; cursor: pointer; color: #666; border-bottom: 2px solid transparent; transition: all 0.15s; }
+.nav-btn:hover { color: #1a1a1a; }
+.nav-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+.header-right { margin-left: auto; padding: 0.6rem 0; }
+.search-wrap { position: relative; }
+.search-input { font-size: 14px; padding: 7px 14px 7px 34px; border: 1px solid #ddd; border-radius: 20px; background: #f5f4f0; width: 240px; outline: none; transition: all 0.15s; }
+.search-input:focus { background: #fff; border-color: #aaa; width: 300px; }
+.search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: #aaa; font-size: 14px; pointer-events: none; }
+.search-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); z-index: 100; max-height: 320px; overflow-y: auto; display: none; }
+.search-dropdown.visible { display: block; }
+.search-item { padding: 10px 14px; cursor: pointer; border-bottom: 1px solid #f0ede6; }
+.search-item:last-child { border-bottom: none; }
+.search-item:hover { background: #f5f4f0; }
+.search-item-title { font-size: 13px; color: #1a1a1a; line-height: 1.3; }
+.search-item-meta { font-size: 11px; color: #aaa; margin-top: 3px; }
+.search-empty { padding: 14px; font-size: 13px; color: #aaa; text-align: center; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.5rem; }
+.page { display: none; }
+.page.active { display: block; }
+
+.section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #aaa; margin-bottom: 1rem; }
+
+.legend { display: flex; gap: 20px; margin-bottom: 1.5rem; }
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #555; }
+.dot { width: 9px; height: 9px; border-radius: 50%; }
+.dot-k { background: #185FA5; }
+.dot-c { background: #888780; }
+.dot-l { background: #A32D2D; }
+
+.stats { display: flex; gap: 12px; margin-bottom: 1.5rem; }
+.stat-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; padding: 0.75rem 1rem; flex: 1; }
+.stat-card .num { font-size: 22px; font-weight: 600; }
+.stat-card .lbl { font-size: 12px; color: #888; margin-top: 2px; }
+
+.cards-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+
+.story-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 12px; overflow: hidden; }
+.story-card.hidden { display: none; }
+
+.framing-grid { display: grid; grid-template-columns: 1fr 1fr; }
+.framing-box { border: none; overflow: hidden; }
+.framing-box + .framing-box { border-left: 1px solid #f0ede6; }
+
+.framing-img { width: 100%; height: 130px; object-fit: cover; display: block; background: #eee; }
+.framing-img-placeholder { width: 100%; height: 130px; display: flex; align-items: center; justify-content: center; font-size: 28px; }
+.framing-img-placeholder-k { background: #EBF3FC; }
+.framing-img-placeholder-l { background: #FCEAEA; }
+.framing-img-placeholder-c { background: #F2F1ED; }
+
+.framing-body { padding: 12px 14px 14px; }
+.framing-label { font-size: 11px; font-weight: 600; margin-bottom: 5px; }
+.framing-label-k { color: #185FA5; }
+.framing-label-l { color: #A32D2D; }
+.framing-label-c { color: #888; }
+.framing-title { font-size: 13px; line-height: 1.4; color: #1a1a1a; margin-bottom: 6px; }
+.framing-link { font-size: 11px; color: #185FA5; text-decoration: none; }
+.framing-link:hover { text-decoration: underline; }
+.framing-link-l { color: #A32D2D; }
+.framing-link-c { color: #888; }
+
+.card-footer { padding: 10px 14px; border-top: 1px solid #f0ede6; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.coverage-bar { display: flex; height: 4px; border-radius: 4px; overflow: hidden; gap: 1px; width: 80px; flex-shrink: 0; }
+.bar-k { background: #185FA5; }
+.bar-c { background: #888780; }
+.bar-l { background: #A32D2D; }
+.chip { font-size: 11px; padding: 2px 8px; border-radius: 20px; border: 1px solid; }
+.chip-k { background: #EBF3FC; color: #0C447C; border-color: #C5DCF5; }
+.chip-c { background: #F2F1ED; color: #444; border-color: #DDD; }
+.chip-l { background: #FCEAEA; color: #791F1F; border-color: #F5C5C5; }
+.ignorado { font-size: 11px; padding: 2px 8px; border-radius: 20px; display: inline-flex; align-items: center; gap: 4px; }
+.ignorado-k { background: #EBF3FC; color: #0C447C; }
+.ignorado-c { background: #F2F1ED; color: #444; }
+.ignorado-l { background: #FCEAEA; color: #791F1F; }
+
+.single-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; padding: 12px 14px; }
+.single-title { font-size: 14px; line-height: 1.4; color: #1a1a1a; margin-bottom: 6px; }
+.single-meta { font-size: 12px; color: #aaa; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.single-link { font-size: 12px; color: #185FA5; text-decoration: none; margin-left: auto; }
+.single-link:hover { text-decoration: underline; }
+
+.filters { display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap; }
+.filter-btn { font-size: 13px; padding: 5px 14px; border-radius: 20px; border: 1px solid #ccc; background: #fff; color: #555; cursor: pointer; }
+.filter-btn.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+
+.no-results { text-align: center; padding: 3rem; color: #aaa; font-size: 14px; }
+
+.expand-btn { font-size: 12px; color: #aaa; background: none; border: none; cursor: pointer; padding: 0; margin-left: auto; }
+.expand-btn:hover { color: #555; }
+.all-titles { display: none; border-top: 1px solid #f0ede6; padding: 10px 14px; }
+.all-titles.open { display: block; }
+.title-row { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; border-bottom: 1px solid #f8f6f2; }
+.title-row:last-child { border-bottom: none; }
+.title-medio { font-size: 11px; font-weight: 600; min-width: 90px; flex-shrink: 0; }
+.title-medio-k { color: #185FA5; }
+.title-medio-c { color: #888; }
+.title-medio-l { color: #A32D2D; }
+.title-text { font-size: 13px; color: #1a1a1a; line-height: 1.4; text-decoration: none; }
+.title-text:hover { text-decoration: underline; }
+
+.relevancia-alta::before { content: "🔥 "; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="logo">Sesgo AR</div>
+    <nav class="nav">
+      <button class="nav-btn active" onclick="mostrarPagina('portada', this)">Portada</button>
+      <button class="nav-btn" onclick="mostrarPagina('todas', this)">Todas las noticias</button>
+    </nav>
+    <div class="header-right">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input class="search-input" type="text" placeholder="Buscar noticia..." id="search-input" autocomplete="off">
+        <div class="search-dropdown" id="search-dropdown"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- PORTADA -->
+  <div class="page active" id="page-portada">
+    <div class="legend">
+      <div class="legend-item"><div class="dot dot-k"></div> Kirchnerista / progresista</div>
+      <div class="legend-item"><div class="dot dot-c"></div> Centro / independiente</div>
+      <div class="legend-item"><div class="dot dot-l"></div> Liberal / libertario</div>
+    </div>
+    <div class="stats" id="stats-bar"></div>
+    <div class="section-title">Noticias más relevantes</div>
+    <div class="cards-grid" id="cards-portada"></div>
+  </div>
+
+  <!-- TODAS -->
+  <div class="page" id="page-todas">
+    <div class="filters">
+      <button class="filter-btn active" onclick="filtrar('todos', this)">Todas</button>
+      <button class="filter-btn" onclick="filtrar('multi', this)">Varios medios</button>
+      <button class="filter-btn" onclick="filtrar('blind', this)">Ignoradas por algún sector</button>
+      <button class="filter-btn" onclick="filtrar('K', this)">Solo K</button>
+      <button class="filter-btn" onclick="filtrar('C', this)">Solo centro</button>
+      <button class="filter-btn" onclick="filtrar('L', this)">Solo liberal</button>
+    </div>
+    <div class="cards-grid" id="cards-todas"></div>
+    <div class="no-results hidden" id="no-results">No hay noticias para este filtro.</div>
+  </div>
+
+</div>
+
+<script>
+const MEDIO_TENDENCIA = {
+  "Infobae": "L", "La Nación": "L",
+  "Clarín": "C", "Perfil": "C", "Ámbito": "C", "El Cronista": "C",
+  "Página 12": "K", "El Destape": "K", "Tiempo Argentino": "K",
+};
+const IGNORADO_LABEL = { K: "Kirchneristas lo ignoraron", C: "Centro lo ignoró", L: "Liberales lo ignoraron" };
+const IGNORADO_CLASS = { K: "ignorado-k", C: "ignorado-c", L: "ignorado-l" };
+
+let todosGrupos = [];
+
+function relevancia(g) {
+  if (g.relevancia_ia) return g.relevancia_ia * 2 + (g.controversia ? 5 : 0);
+  let score = 0;
+  const medios = g.medios || [];
+  const blind = g.blind_spot || [];
+  const tend = g.tendencias_cubren || [];
+  score += medios.length * 2;
+  score += blind.length * 3;
+  if (tend.includes("K") && tend.includes("L")) score += 5;
+  if (tend.includes("K") && tend.includes("C")) score += 2;
+  if (tend.includes("L") && tend.includes("C")) score += 2;
+  return score;
+}
+
+function framingBox(art, t) {
+  const tl = t.toLowerCase();
+  const labelMap = { k: "Kirchnerista", c: "Centro", l: "Liberal" };
+  const linkClass = t === "K" ? "" : t === "L" ? " framing-link-l" : " framing-link-c";
+  const imgSrc = art.imagen ? `https://images.weserv.nl/?url=${encodeURIComponent(art.imagen)}&w=400&h=200&fit=cover` : "";
+  const img = imgSrc
+    ? `<img class="framing-img" src="${imgSrc}" alt="" onerror="this.parentElement.innerHTML='<div class=framing-img-placeholder framing-img-placeholder-${tl}>📰</div>'">`
+    : `<div class="framing-img-placeholder framing-img-placeholder-${tl}">📰</div>`;
+  const link = art.link ? `<a href="${art.link}" target="_blank" class="framing-link${linkClass}">Leer en ${art.medio} →</a>` : "";
+  return `
+    <div class="framing-box">
+      ${img}
+      <div class="framing-body">
+        <div class="framing-label framing-label-${tl}">● ${labelMap[tl]} · ${art.medio}</div>
+        <div class="framing-title">${art.titulo}</div>
+        ${link}
+      </div>
+    </div>`;
+}
+
+function renderCard(g, esPortada) {
+  const arts = g.articulos || [];
+  const blind = g.blind_spot || [];
+  const medios = g.medios || [];
+  const tend = g.tendencias_cubren || [];
+
+  const total = medios.length;
+  const nK = medios.filter(m => MEDIO_TENDENCIA[m] === "K").length;
+  const nC = medios.filter(m => MEDIO_TENDENCIA[m] === "C").length;
+  const nL = medios.filter(m => MEDIO_TENDENCIA[m] === "L").length;
+  const pK = total ? Math.round(nK/total*100) : 0;
+  const pC = total ? Math.round(nC/total*100) : 0;
+  const pL = total ? Math.round(nL/total*100) : 0;
+
+  const artK = arts.find(a => MEDIO_TENDENCIA[a.medio] === "K");
+  const artL = arts.find(a => MEDIO_TENDENCIA[a.medio] === "L");
+  const artC = arts.find(a => MEDIO_TENDENCIA[a.medio] === "C");
+
+  let framingHTML = "";
+  if (artK && artL) framingHTML = `<div class="framing-grid">${framingBox(artK,"K")}${framingBox(artL,"L")}</div>`;
+  else if (artK && artC) framingHTML = `<div class="framing-grid">${framingBox(artK,"K")}${framingBox(artC,"C")}</div>`;
+  else if (artL && artC) framingHTML = `<div class="framing-grid">${framingBox(artC,"C")}${framingBox(artL,"L")}</div>`;
+  else {
+    const art = arts[0];
+    if (!art) return "";
+    const link = art.link ? `<a href="${art.link}" target="_blank" class="framing-link">Leer en ${art.medio} →</a>` : "";
+    const imgSrc = art.imagen ? `https://images.weserv.nl/?url=${encodeURIComponent(art.imagen)}&w=800&h=200&fit=cover` : "";
+    const img = imgSrc ? `<img class="framing-img" src="${imgSrc}" alt="" style="width:100%" onerror="this.style.display='none'">` : "";
+    framingHTML = `${img}<div class="framing-body" style="padding:12px 14px 14px"><div class="framing-label framing-label-${(MEDIO_TENDENCIA[art.medio]||'C').toLowerCase()}">● ${art.medio}</div><div class="framing-title">${art.titulo}</div>${link}</div>`;
+  }
+
+  const uid = Math.random().toString(36).slice(2);
+  const allTitlesHTML = arts.map(a => {
+    const t = (MEDIO_TENDENCIA[a.medio]||'c').toLowerCase();
+    const title = a.link ? `<a href="${a.link}" target="_blank" class="title-text">${a.titulo}</a>` : `<span class="title-text">${a.titulo}</span>`;
+    return `<div class="title-row"><span class="title-medio title-medio-${t}">${a.medio}</span>${title}</div>`;
+  }).join('');
+    const chipsHTML = medios.map(m => { const art = arts.find(a => a.medio === m); const t = (MEDIO_TENDENCIA[m]||'c').toLowerCase(); return art && art.link ? `<a href="${art.link}" target="_blank" class="chip chip-${t}" style="text-decoration:none">${m}</a>` : `<span class="chip chip-${t}">${m}</span>`; }).join("");
+  const ignoradoHTML = blind.map(b => `<span class="ignorado ${IGNORADO_CLASS[b]}">👁 ${IGNORADO_LABEL[b]}</span>`).join("");
+  const barHTML = `<div class="coverage-bar"><div class="bar-k" style="width:${pK}%"></div><div class="bar-c" style="width:${pC}%"></div><div class="bar-l" style="width:${pL}%"></div></div>`;
+
+  const dataAttrs = `data-tendencias="${tend.join(",")}" data-multi="${total>1}" data-blind="${blind.length>0 && total>1}"`;
+  const temaHTML = g.tema ? `<span class="chip chip-c">${g.tema}</span>` : "";
+  const controversiaHTML = g.controversia ? `<span class="ignorado ignorado-l">⚡ Versiones contradictorias</span>` : "";
+  const resumenHTML = g.resumen ? `<div style="font-size:12px;color:#888;padding:8px 14px 0">${g.resumen}</div>` : "";
+
+  return `
+    <div class="story-card" ${dataAttrs}>
+      ${framingHTML}
+      ${resumenHTML}
+      <div class="card-footer">
+        ${barHTML}
+        ${temaHTML}
+        ${chipsHTML}
+        ${ignoradoHTML}
+        ${controversiaHTML}
+        <button class="expand-btn" onclick="var d=this.parentElement.nextElementSibling;d.classList.toggle('open');this.textContent=d.classList.contains('open')?'▲ Ocultar':'▼ Ver todos los títulos (${arts.length})'">▼ Ver todos los títulos (${arts.length})</button>
+      </div>
+      <div class="all-titles">${allTitlesHTML}</div>
+    </div>`;
+}
+
+function renderSingleRow(g) {
+  const art = (g.articulos || [])[0];
+  if (!art) return "";
+  const tend = g.tendencias_cubren || [];
+  const blind = g.blind_spot || [];
+  const medios = g.medios || [];
+  const chips = medios.map(m => `<span class="chip chip-${(MEDIO_TENDENCIA[m]||'c').toLowerCase()}">${m}</span>`).join("");
+  const ignorado = blind.filter(b => medios.length > 1).map(b => `<span class="ignorado ${IGNORADO_CLASS[b]}">👁 ${IGNORADO_LABEL[b]}</span>`).join("");
+  const link = art.link ? `<a href="${art.link}" target="_blank" class="single-link">Leer →</a>` : "";
+  return `
+    <div class="single-card" data-tendencias="${tend.join(",")}" data-multi="${medios.length>1}" data-blind="${blind.length>0 && medios.length>1}">
+      <div class="single-title">${art.titulo}</div>
+      <div class="single-meta">${chips}${ignorado}${link}</div>
+    </div>`;
+}
+
+function mostrarPagina(id, btn) {
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("page-" + id).classList.add("active");
+  btn.classList.add("active");
+}
+
+function filtrar(tipo, btn) {
+  document.querySelectorAll("#page-todas .filter-btn").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  const cards = document.querySelectorAll("#cards-todas [data-tendencias]");
+  let visible = 0;
+  cards.forEach(card => {
+    const tendencias = card.dataset.tendencias.split(",");
+    const esMulti = card.dataset.multi === "true";
+    const tieneBlind = card.dataset.blind === "true";
+    let mostrar =
+      tipo === "todos" ? true :
+      tipo === "multi" ? esMulti :
+      tipo === "blind" ? tieneBlind :
+      tipo === "K" ? (tendencias.includes("K") && !tendencias.includes("C") && !tendencias.includes("L")) :
+      tipo === "C" ? (tendencias.includes("C") && !tendencias.includes("K") && !tendencias.includes("L")) :
+      tipo === "L" ? (tendencias.includes("L") && !tendencias.includes("K") && !tendencias.includes("C")) : true;
+    card.classList.toggle("hidden", !mostrar);
+    if (mostrar) visible++;
+  });
+  document.getElementById("no-results").classList.toggle("hidden", visible > 0);
+}
+
+// Buscador
+function setupSearch(grupos) {
+  const input = document.getElementById("search-input");
+  const dropdown = document.getElementById("search-dropdown");
+
+  input.addEventListener("input", () => {
+    const q = input.value.trim().toLowerCase();
+    if (q.length < 2) { dropdown.classList.remove("visible"); return; }
+
+    const matches = [];
+    for (const g of grupos) {
+      for (const art of (g.articulos || [])) {
+        if (art.titulo.toLowerCase().includes(q)) {
+          matches.push({ art, g });
+          if (matches.length >= 8) break;
+        }
+      }
+      if (matches.length >= 8) break;
+    }
+
+    if (matches.length === 0) {
+      dropdown.innerHTML = `<div class="search-empty">Sin resultados para "${input.value}"</div>`;
+    } else {
+      dropdown.innerHTML = matches.map(({ art, g }, i) => `
+        <div class="search-item" onclick="irANoticia(${grupos.indexOf(g)})">
+          <div class="search-item-title">${art.titulo}</div>
+          <div class="search-item-meta">${art.medio} · ${g.medios.length} medio${g.medios.length !== 1 ? 's' : ''}</div>
+        </div>`).join("");
+    }
+    dropdown.classList.add("visible");
+  });
+
+  document.addEventListener("click", e => {
+    if (!e.target.closest(".search-wrap")) dropdown.classList.remove("visible");
+  });
+}
+
+function irANoticia(idx) {
+  const g = todosGrupos[idx];
+  document.getElementById("search-input").value = "";
+  document.getElementById("search-dropdown").classList.remove("visible");
+
+  // Ir a "todas" y hacer highlight
+  document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("page-todas").classList.add("active");
+  document.querySelectorAll(".nav-btn")[1].classList.add("active");
+
+  setTimeout(() => {
+    const cards = document.querySelectorAll("#cards-todas .story-card, #cards-todas .single-card");
+    const card = cards[idx];
+    if (card) {
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+      card.style.outline = "2px solid #185FA5";
+      setTimeout(() => card.style.outline = "", 2000);
+    }
+  }, 50);
+}
+
+async function cargarDatos() {
+  try {
+    const r = await fetch("grupos.json");
+    const grupos = await r.json();
+    todosGrupos = grupos;
+
+    // Calcular relevancia y separar
+    const conScore = grupos.map(g => ({ g, score: relevancia(g) }));
+    conScore.sort((a, b) => b.score - a.score);
+
+    let portada = conScore.filter(x => x.score >= 8).slice(0, 12).map(x => x.g);
+    if (portada.length < 8) portada = conScore.slice(0, 15).map(x => x.g);
+    const todas = conScore.map(x => x.g);
+
+    // Stats
+    const multi = grupos.filter(g => g.cantidad_articulos > 1).length;
+    const conBlind = grupos.filter(g => (g.blind_spot||[]).length > 0 && g.cantidad_articulos > 1).length;
+    document.getElementById("stats-bar").innerHTML = `
+      <div class="stat-card"><div class="num">${grupos.length}</div><div class="lbl">Noticias detectadas</div></div>
+      <div class="stat-card"><div class="num">${multi}</div><div class="lbl">Cubiertas por varios medios</div></div>
+      <div class="stat-card"><div class="num">${conBlind}</div><div class="lbl">Ignoradas por algún sector</div></div>
+    `;
+
+    // Portada — cards completas
+    document.getElementById("cards-portada").innerHTML =
+      portada.length > 0
+        ? portada.map(g => renderCard(g, true)).join("")
+        : `<div class="no-results">No hay noticias relevantes por ahora. Volvé más tarde o revisá "Todas las noticias".</div>`;
+
+    // Todas — cards completas para multi, filas simples para el resto
+    document.getElementById("cards-todas").innerHTML = todas.map(g =>
+      g.cantidad_articulos > 1 ? renderCard(g, false) : renderSingleRow(g)
+    ).join("");
+
+    setupSearch(grupos);
+
+  } catch(e) {
+    document.getElementById("cards-portada").innerHTML =
+      `<div class="no-results">No se pudo cargar grupos.json. Corré primero scraper.py y agrupar.py.</div>`;
+  }
+}
+
+cargarDatos();
+</script>
+</body>
+</html>
