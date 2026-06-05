@@ -2,8 +2,11 @@ name: Actualizar noticias
 
 on:
   schedule:
-    - cron: '0 * * * *'  # cada hora
-  workflow_dispatch:       # también se puede correr a mano desde GitHub
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   scraper:
