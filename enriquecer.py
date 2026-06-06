@@ -6,9 +6,8 @@ from urllib.parse import urlparse
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.1-8b-instant"
 
-TEMAS_VALIDOS = {"Política", "Economía", "Judicial", "Seguridad", "Internacional", "Sociedad", "Cultura", "Deportes", "General"}
+TEMAS_VALIDOS = {"Política", "Economía", "Economía Internacional", "Judicial", "Seguridad", "Internacional", "Sociedad", "Cultura", "Deportes", "General"}
 
-# Mapeo de secciones de URL por medio
 URL_CATEGORIAS = {
     "politica": "Política", "economia": "Economía", "economic": "Economía",
     "judicial": "Judicial", "tribunales": "Judicial", "justicia": "Judicial",
@@ -18,6 +17,34 @@ URL_CATEGORIAS = {
     "cultura": "Cultura", "espectaculos": "Cultura", "entretenimiento": "Cultura",
     "deportes": "Deportes", "futbol": "Deportes", "deporte": "Deportes",
 }
+
+# Dominios de medios argentinos
+DOMINIOS_ARGENTINOS = [
+    "infobae.com", "lanacion.com.ar", "clarin.com", "perfil.com",
+    "ambito.com", "cronista.com", "pagina12.com.ar", "eldestapeweb.com",
+    "tiempoar.com.ar"
+]
+
+# Palabras que indican contexto económico internacional relevante
+PALABRAS_ECO_INTL = [
+    "fmi", "fed", "reserva federal", "wall street", "nasdaq", "dow jones",
+    "dólar", "euro", "inflación", "deuda", "bonos", "petróleo", "oro",
+    "bitcoin", "crypto", "bolsa", "mercados", "banco mundial", "aranceles",
+    "trump", "china", "exportaciones", "importaciones", "comercio"
+]
+
+def es_dominio_argentino(url):
+    if not url:
+        return True  # si no hay URL, asumir argentino
+    try:
+        domain = urlparse(url).netloc.lower().replace("www.", "")
+        return any(d in domain for d in DOMINIOS_ARGENTINOS)
+    except:
+        return True
+
+def es_economica_internacional(titulo):
+    t = titulo.lower()
+    return any(p in t for p in PALABRAS_ECO_INTL)
 
 def tema_desde_url(url):
     if not url:
@@ -34,8 +61,7 @@ def tema_desde_url(url):
     return None
 
 def tema_desde_groq(titulo, key):
-    prompt = f'Categoría de esta noticia argentina: "{titulo}"\nOpciones: Política, Economía, Judicial, Seguridad, Internacional, Sociedad, Cultura, Deportes, General\nRespondé solo con una palabra.'
-
+    prompt = f'Categoría de esta noticia: "{titulo}"\nOpciones: Política, Economía, Judicial, Seguridad, Internacional, Sociedad, Cultura, Deportes, General\nRespondé solo con una palabra.'
     try:
         r = requests.post(
             GROQ_API_URL,
@@ -69,12 +95,27 @@ def enriquecer_grupos():
 
     desde_url = 0
     desde_groq = 0
+    descartadas = 0
     total = len(grupos)
 
     for i, g in enumerate(grupos):
         arts = g.get("articulos", [])
         if not arts:
             g["tema"] = "General"
+            continue
+
+        primer_link = arts[0].get("link", "")
+        titulo = arts[0]["titulo"]
+
+        # Detectar si es noticia de otro país
+        if not es_dominio_argentino(primer_link):
+            if es_economica_internacional(titulo):
+                g["tema"] = "Economía Internacional"
+                print(f"  [{i+1}/{total}] [INTL-ECO] {titulo[:60]}")
+            else:
+                g["tema"] = "Descartar"
+                descartadas += 1
+                print(f"  [{i+1}/{total}] [DESCARTA] {titulo[:60]}")
             continue
 
         # Intentar desde URL primero
@@ -87,18 +128,19 @@ def enriquecer_grupos():
 
         # Fallback a Groq
         if not tema and key:
-            tema = tema_desde_groq(arts[0]["titulo"], key)
+            tema = tema_desde_groq(titulo, key)
             desde_groq += 1
         elif not tema:
             tema = "General"
 
         g["tema"] = tema
-        print(f"  [{i+1}/{total}] [{'URL' if tema_desde_url(arts[0].get('link','')) else 'IA'}] [{tema}] {arts[0]['titulo'][:60]}")
+        print(f"  [{i+1}/{total}] [{'URL' if tema_desde_url(primer_link) else 'IA '}] [{tema}] {titulo[:60]}")
 
     with open("grupos.json", "w", encoding="utf-8") as f:
         json.dump(grupos, f, ensure_ascii=False, indent=2)
 
-    print(f"\nListo. {total} grupos clasificados ({desde_url} por URL, {desde_groq} por Groq).")
+    print(f"\nListo. {total} grupos clasificados.")
+    print(f"  Por URL: {desde_url} | Por Groq: {desde_groq} | Descartadas: {descartadas}")
 
 if __name__ == "__main__":
     enriquecer_grupos()

@@ -358,9 +358,9 @@ async function cargarDatos() {
     `;
 
     // Agrupar portada por tema
-    const TEMAS_ORDEN = ["Política", "Economía", "Judicial", "Seguridad", "Internacional", "Sociedad", "Cultura", "Deportes", "General"];
+    const TEMAS_ORDEN = ["Política", "Economía", "Economía Internacional", "Judicial", "Seguridad", "Sociedad", "Cultura", "Deportes", "General"];
     const porTema = {};
-    for (const g of portada) {
+    for (const g of portada.filter(g => g.tema !== "Descartar")) {
       const tema = g.tema || "General";
       if (!porTema[tema]) porTema[tema] = [];
       porTema[tema].push(g);
@@ -372,7 +372,7 @@ async function cargarDatos() {
     }
     document.getElementById("cards-portada").innerHTML = portadaHTML || `<div class="no-results">No hay noticias relevantes por ahora.</div>`;
 
-    document.getElementById("cards-todas").innerHTML = conScore.map(({g}) =>
+    document.getElementById("cards-todas").innerHTML = conScore.filter(({g}) => g.tema !== "Descartar").map(({g}) =>
       g.cantidad_articulos > 1 ? renderCard(g) : renderSingleRow(g)
     ).join("");
 
