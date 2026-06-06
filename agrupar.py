@@ -3,7 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import json
 import numpy as np
 
-UMBRAL = 0.75
+UMBRAL = 0.55
 
 TODOS_LOS_MEDIOS = [
     "Infobae", "La Nación", "Clarín", "Perfil",
