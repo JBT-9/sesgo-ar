@@ -6,82 +6,85 @@
 <title>Sesgo AR</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f4f0; color: #1a1a1a; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f0efe9; color: #1a1a1a; }
 
 .header { background: #fff; border-bottom: 1px solid #e0ddd5; padding: 0; }
-.header-inner { max-width: 960px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; gap: 0; }
-.logo { font-size: 18px; font-weight: 700; padding: 1rem 0; margin-right: 2rem; letter-spacing: -0.5px; }
-.nav { display: flex; gap: 0; }
-.nav-btn { font-size: 14px; padding: 1.1rem 1.2rem; border: none; background: none; cursor: pointer; color: #666; border-bottom: 2px solid transparent; transition: all 0.15s; }
+.header-inner { max-width: 980px; margin: 0 auto; padding: 0 1.5rem; display: flex; align-items: center; }
+.logo { font-size: 20px; font-weight: 800; padding: 1rem 0; margin-right: 2rem; letter-spacing: -1px; }
+.nav { display: flex; }
+.nav-btn { font-size: 14px; padding: 1.1rem 1.2rem; border: none; background: none; cursor: pointer; color: #666; border-bottom: 3px solid transparent; transition: all 0.15s; font-weight: 500; }
 .nav-btn:hover { color: #1a1a1a; }
-.nav-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
+.nav-btn.active { color: #1a1a1a; border-bottom-color: #1a1a1a; }
 .header-right { margin-left: auto; padding: 0.6rem 0; }
 .search-wrap { position: relative; }
-.search-input { font-size: 14px; padding: 7px 14px 7px 34px; border: 1px solid #ddd; border-radius: 20px; background: #f5f4f0; width: 240px; outline: none; transition: all 0.15s; }
+.search-input { font-size: 14px; padding: 8px 16px 8px 36px; border: 1.5px solid #ddd; border-radius: 20px; background: #f0efe9; width: 240px; outline: none; transition: all 0.15s; }
 .search-input:focus { background: #fff; border-color: #aaa; width: 300px; }
-.search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: #aaa; font-size: 14px; pointer-events: none; }
-.search-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); z-index: 100; max-height: 320px; overflow-y: auto; display: none; }
+.search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: #aaa; font-size: 14px; pointer-events: none; }
+.search-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); z-index: 100; max-height: 320px; overflow-y: auto; display: none; }
 .search-dropdown.visible { display: block; }
-.search-item { padding: 10px 14px; cursor: pointer; border-bottom: 1px solid #f0ede6; }
+.search-item { padding: 11px 16px; cursor: pointer; border-bottom: 1px solid #f0ede6; }
 .search-item:last-child { border-bottom: none; }
 .search-item:hover { background: #f5f4f0; }
 .search-item-title { font-size: 13px; color: #1a1a1a; line-height: 1.3; }
 .search-item-meta { font-size: 11px; color: #aaa; margin-top: 3px; }
-.search-empty { padding: 14px; font-size: 13px; color: #aaa; text-align: center; }
+.search-empty { padding: 16px; font-size: 13px; color: #aaa; text-align: center; }
 
-.container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1.5rem; }
+.container { max-width: 980px; margin: 0 auto; padding: 2rem 1.5rem; }
 .page { display: none; }
 .page.active { display: block; }
 
-.section-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: #aaa; margin-bottom: 1rem; }
+.section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #aaa; margin-bottom: 1.25rem; }
 
-.stats { display: flex; gap: 12px; margin-bottom: 1.5rem; }
-.stat-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; padding: 0.75rem 1rem; flex: 1; }
-.stat-card .num { font-size: 22px; font-weight: 600; }
-.stat-card .lbl { font-size: 12px; color: #888; margin-top: 2px; }
+.stats { display: flex; gap: 12px; margin-bottom: 2rem; }
+.stat-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 12px; padding: 1rem 1.25rem; flex: 1; }
+.stat-card .num { font-size: 26px; font-weight: 700; letter-spacing: -1px; }
+.stat-card .lbl { font-size: 12px; color: #888; margin-top: 3px; }
 
-.cards-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.cards-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
 
-.story-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 12px; overflow: hidden; }
+.story-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 14px; overflow: hidden; transition: box-shadow 0.15s; }
+.story-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
 .story-card.hidden { display: none; }
 
 .framing-grid { display: grid; grid-template-columns: 1fr 1fr; }
-.framing-box { border: none; overflow: hidden; }
+.framing-box { overflow: hidden; }
 .framing-box + .framing-box { border-left: 1px solid #f0ede6; }
 
-.framing-img { width: 100%; height: 130px; object-fit: cover; display: block; background: #eee; }
-.framing-img-placeholder { width: 100%; height: 130px; display: flex; align-items: center; justify-content: center; font-size: 28px; background: #f5f4f0; }
+.framing-img { width: 100%; height: 160px; object-fit: cover; display: block; }
+.framing-img-placeholder { width: 100%; height: 160px; display: flex; align-items: center; justify-content: center; font-size: 32px; background: #f5f4f0; }
 
-.framing-body { padding: 12px 14px 14px; }
-.framing-label { font-size: 11px; font-weight: 600; color: #888; margin-bottom: 5px; }
-.framing-title { font-size: 13px; line-height: 1.4; color: #1a1a1a; margin-bottom: 6px; }
-.framing-link { font-size: 11px; color: #555; text-decoration: none; }
-.framing-link:hover { text-decoration: underline; color: #1a1a1a; }
+.framing-body { padding: 14px 16px 16px; }
+.framing-medio { font-size: 11px; font-weight: 700; margin-bottom: 6px; letter-spacing: 0.3px; }
+.framing-title { font-size: 14px; line-height: 1.45; color: #1a1a1a; margin-bottom: 8px; font-weight: 500; }
+.framing-link { font-size: 11px; color: #888; text-decoration: none; }
+.framing-link:hover { color: #1a1a1a; text-decoration: underline; }
 
-.card-footer { padding: 10px 14px; border-top: 1px solid #f0ede6; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.chip { font-size: 11px; padding: 2px 8px; border-radius: 20px; border: 1px solid #ddd; background: #f5f4f0; color: #444; text-decoration: none; transition: background 0.1s; }
-a.chip:hover { background: #eee; color: #1a1a1a; }
-.chip-ausente { font-style: italic; color: #888; }
+.card-footer { padding: 10px 16px; border-top: 1px solid #f0ede6; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.chip { font-size: 11px; padding: 3px 10px; border-radius: 20px; border: 1.5px solid #e8e6e0; background: #faf9f6; color: #555; text-decoration: none; font-weight: 500; transition: all 0.1s; }
+a.chip:hover { background: #f0ede6; color: #1a1a1a; border-color: #ccc; }
+.chip-ausente { color: #999; border-style: dashed; font-weight: 400; font-style: italic; }
 
-.single-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; padding: 12px 14px; }
-.single-title { font-size: 14px; line-height: 1.4; color: #1a1a1a; margin-bottom: 6px; }
-.single-meta { font-size: 12px; color: #aaa; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-.single-link { font-size: 12px; color: #555; text-decoration: none; margin-left: auto; }
-.single-link:hover { text-decoration: underline; }
+.single-card { background: #fff; border: 1px solid #e0ddd5; border-radius: 10px; padding: 14px 16px; transition: box-shadow 0.15s; }
+.single-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.single-title { font-size: 15px; line-height: 1.4; color: #1a1a1a; margin-bottom: 8px; font-weight: 500; }
+.single-meta { font-size: 12px; color: #aaa; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.single-link { font-size: 12px; color: #888; text-decoration: none; margin-left: auto; }
+.single-link:hover { text-decoration: underline; color: #1a1a1a; }
 
-.filters { display: flex; gap: 8px; margin-bottom: 1.25rem; flex-wrap: wrap; }
-.filter-btn { font-size: 13px; padding: 5px 14px; border-radius: 20px; border: 1px solid #ccc; background: #fff; color: #555; cursor: pointer; }
+.filters { display: flex; gap: 8px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.filter-btn { font-size: 13px; padding: 6px 16px; border-radius: 20px; border: 1.5px solid #ddd; background: #fff; color: #555; cursor: pointer; font-weight: 500; transition: all 0.15s; }
+.filter-btn:hover { border-color: #aaa; color: #1a1a1a; }
 .filter-btn.active { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
 
 .no-results { text-align: center; padding: 3rem; color: #aaa; font-size: 14px; }
 
-.expand-btn { font-size: 12px; color: #aaa; background: none; border: none; cursor: pointer; padding: 0; margin-left: auto; }
-.expand-btn:hover { color: #555; }
-.all-titles { display: none; border-top: 1px solid #f0ede6; padding: 10px 14px; }
+.expand-btn { font-size: 12px; color: #bbb; background: none; border: none; cursor: pointer; padding: 0; margin-left: auto; font-weight: 500; }
+.expand-btn:hover { color: #666; }
+.all-titles { display: none; border-top: 1px solid #f0ede6; padding: 12px 16px; }
 .all-titles.open { display: block; }
-.title-row { display: flex; align-items: baseline; gap: 8px; padding: 5px 0; border-bottom: 1px solid #f8f6f2; }
+.title-row { display: flex; align-items: baseline; gap: 10px; padding: 6px 0; border-bottom: 1px solid #f8f6f2; }
 .title-row:last-child { border-bottom: none; }
-.title-medio { font-size: 11px; font-weight: 600; color: #888; min-width: 90px; flex-shrink: 0; }
+.title-medio { font-size: 11px; font-weight: 700; min-width: 100px; flex-shrink: 0; }
 .title-text { font-size: 13px; color: #1a1a1a; line-height: 1.4; text-decoration: none; }
 .title-text:hover { text-decoration: underline; }
 </style>
@@ -107,14 +110,12 @@ a.chip:hover { background: #eee; color: #1a1a1a; }
 
 <div class="container">
 
-  <!-- PORTADA -->
   <div class="page active" id="page-portada">
     <div class="stats" id="stats-bar"></div>
     <div class="section-title">Noticias más relevantes</div>
     <div class="cards-grid" id="cards-portada"></div>
   </div>
 
-  <!-- TODAS -->
   <div class="page" id="page-todas">
     <div class="filters">
       <button class="filter-btn active" onclick="filtrar('todos', this)">Todas</button>
@@ -128,6 +129,19 @@ a.chip:hover { background: #eee; color: #1a1a1a; }
 </div>
 
 <script>
+// Colores de marca por medio
+const MEDIO_COLOR = {
+  "Infobae":          "#FF6900",
+  "La Nación":        "#003087",
+  "Clarín":           "#C8102E",
+  "Perfil":           "#1a1a1a",
+  "Ámbito":           "#006633",
+  "El Cronista":      "#004B87",
+  "Página 12":        "#E30613",
+  "El Destape":       "#7B2D8B",
+  "Tiempo Argentino": "#0057A8",
+};
+
 const MEDIO_TENDENCIA = {
   "Infobae": "L", "La Nación": "L",
   "Clarín": "C", "Perfil": "C", "Ámbito": "C", "El Cronista": "C",
@@ -147,17 +161,22 @@ function relevancia(g) {
   return score;
 }
 
+function medioColor(nombre) {
+  return MEDIO_COLOR[nombre] || "#888";
+}
+
 function framingBox(art) {
   const imgSrc = art.imagen ? `https://images.weserv.nl/?url=${encodeURIComponent(art.imagen)}&w=400&h=200&fit=cover` : "";
   const img = imgSrc
     ? `<img class="framing-img" src="${imgSrc}" alt="" onerror="this.style.display='none'">`
     : `<div class="framing-img-placeholder">📰</div>`;
   const link = art.link ? `<a href="${art.link}" target="_blank" class="framing-link">Leer en ${art.medio} →</a>` : "";
+  const color = medioColor(art.medio);
   return `
     <div class="framing-box">
       ${img}
       <div class="framing-body">
-        <div class="framing-label">${art.medio}</div>
+        <div class="framing-medio" style="color:${color}">${art.medio}</div>
         <div class="framing-title">${art.titulo}</div>
         ${link}
       </div>
@@ -188,24 +207,25 @@ function renderCard(g) {
     const imgSrc = art.imagen ? `https://images.weserv.nl/?url=${encodeURIComponent(art.imagen)}&w=800&h=200&fit=cover` : "";
     const img = imgSrc ? `<img class="framing-img" src="${imgSrc}" alt="" style="width:100%" onerror="this.style.display='none'">` : "";
     const link = art.link ? `<a href="${art.link}" target="_blank" class="framing-link">Leer en ${art.medio} →</a>` : "";
-    framingHTML = `${img}<div class="framing-body"><div class="framing-label">${art.medio}</div><div class="framing-title">${art.titulo}</div>${link}</div>`;
+    const color = medioColor(art.medio);
+    framingHTML = `${img}<div class="framing-body"><div class="framing-medio" style="color:${color}">${art.medio}</div><div class="framing-title">${art.titulo}</div>${link}</div>`;
   }
 
   const allTitlesHTML = arts.map(a => {
+    const color = medioColor(a.medio);
     const title = a.link ? `<a href="${a.link}" target="_blank" class="title-text">${a.titulo}</a>` : `<span class="title-text">${a.titulo}</span>`;
-    return `<div class="title-row"><span class="title-medio">${a.medio}</span>${title}</div>`;
+    return `<div class="title-row"><span class="title-medio" style="color:${color}">${a.medio}</span>${title}</div>`;
   }).join("");
 
   const chipsHTML = medios.map(m => {
     const art = arts.find(a => a.medio === m);
+    const color = medioColor(m);
     return art && art.link
-      ? `<a href="${art.link}" target="_blank" class="chip">${m}</a>`
-      : `<span class="chip">${m}</span>`;
+      ? `<a href="${art.link}" target="_blank" class="chip" style="border-color:${color}20;color:${color}">${m}</a>`
+      : `<span class="chip" style="border-color:${color}20;color:${color}">${m}</span>`;
   }).join("");
 
-  // Ausentes: buscar nombre del medio en lugar de letra de tendencia
   const ausentesHTML = (blind || []).map(b => {
-    // b puede ser "K", "C", "L" (viejo) o nombre de medio (nuevo)
     const label = b.length <= 1
       ? ({ K: "medios kirchneristas", C: "medios del centro", L: "medios liberales" }[b] || b)
       : b;
@@ -232,7 +252,11 @@ function renderSingleRow(g) {
   const tend = g.tendencias_cubren || [];
   const medios = g.medios || [];
   const link = art.link ? `<a href="${art.link}" target="_blank" class="single-link">Leer →</a>` : "";
-  const chips = medios.map(m => `<span class="chip">${m}</span>`).join("");
+  const color = medioColor(art.medio);
+  const chips = medios.map(m => {
+    const c = medioColor(m);
+    return `<span class="chip" style="border-color:${c}20;color:${c}">${m}</span>`;
+  }).join("");
   return `
     <div class="single-card" data-tendencias="${tend.join(",")}" data-multi="${medios.length>1}" data-ausente="false">
       <div class="single-title">${art.titulo}</div>

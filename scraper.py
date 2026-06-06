@@ -36,7 +36,7 @@ MEDIOS_SCRAPE = [
 ]
 
 def es_spam(titulo):
-    if not titulo or len(titulo) < 10:
+    if not titulo or len(titulo) < 20:
         return True
     if any(ord(c) > 1000 for c in titulo):
         return True
@@ -46,7 +46,6 @@ def es_spam(titulo):
     return False
 
 def obtener_imagen(url):
-    """Intenta obtener og:image de una URL de artículo."""
     if not url:
         return ""
     try:
@@ -70,13 +69,11 @@ def fetch_rss(medio):
             if es_spam(titulo):
                 continue
             link = entry.get("link", "")
-            # Imagen desde el RSS si existe
             imagen = ""
             if hasattr(entry, "media_content") and entry.media_content:
                 imagen = entry.media_content[0].get("url", "")
             if not imagen and hasattr(entry, "enclosures") and entry.enclosures:
                 imagen = entry.enclosures[0].get("href", "")
-            # Si no hay imagen en el RSS, buscarla en el artículo
             if not imagen and link:
                 imagen = obtener_imagen(link)
             articulos.append({
@@ -110,7 +107,6 @@ def fetch_scrape(medio):
             if a and a.get("href"):
                 href = a["href"]
                 link = href if href.startswith("http") else medio["url"].rstrip("/") + href
-            # Buscar imagen en el artículo
             imagen = obtener_imagen(link) if link else ""
             articulos.append({
                 "titulo": titulo,
