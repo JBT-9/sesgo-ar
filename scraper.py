@@ -2,7 +2,7 @@ import feedparser
 import requests
 import json
 from bs4 import BeautifulSoup
-from datetime import datetime
+from datetime import datetime, timedelta
 
 HEADERS = {
     "User-Agent": (
@@ -35,7 +35,6 @@ MEDIOS_SCRAPE = [
     {"nombre": "El Cronista",      "url": "https://www.cronista.com/",     "selector": "h2, h3", "tendencia": "C"},
 ]
 
-# Palabras que indican que el título es navegación o sección del sitio, no una noticia
 SPAM_EXACTO = {
     "cultura y espectáculos", "política y economía", "sociedad", "deportes",
     "economía", "política", "internacional", "seguridad", "judicial",
@@ -43,18 +42,10 @@ SPAM_EXACTO = {
     "tiempoargentino", "sumate a la comunidad de ámbito", "finanzas y economía",
     "idea management", "martín fierro", "lanzamientos", "inauguración",
     "opinión", "atención", "documentos", "medida", "inversión", "inversiones",
-    "sobre 55 hectáreas", "jugá al desafío mundialista de el destape",
 }
 
-SPAM_PREFIJOS = [
-    "por redacción", "por ", "foto:", "video:", "canal e",
-    "mirá en vivo", "seguí en vivo", "en vivo |",
-]
-
-SPAM_PALABRAS = [
-    "quiniela", "casino", "ruleta", "poker", "slot", "apuesta",
-    "suscribite", "sumate", "newsletter",
-]
+SPAM_PREFIJOS = ["por redacción", "por ", "foto:", "video:", "canal e", "mirá en vivo", "seguí en vivo", "en vivo |"]
+SPAM_PALABRAS = ["quiniela", "casino", "ruleta", "poker", "slot", "apuesta", "suscribite", "sumate", "newsletter"]
 
 def es_spam(titulo):
     if not titulo or len(titulo) < 20:
@@ -62,19 +53,14 @@ def es_spam(titulo):
     if any(ord(c) > 1000 for c in titulo):
         return True
     t = titulo.lower().strip()
-    # Títulos exactos de secciones
     if t in SPAM_EXACTO:
         return True
-    # Prefijos de autor o sección
     if any(t.startswith(p) for p in SPAM_PREFIJOS):
         return True
-    # Palabras spam
     if any(p in t for p in SPAM_PALABRAS):
         return True
-    # Títulos que terminan en punto y son cortos (etiquetas de sección)
     if t.endswith(".") and len(titulo.split()) <= 3:
         return True
-    # Títulos TODO EN MAYÚSCULAS (generalmente son secciones o CTAs)
     if titulo == titulo.upper() and len(titulo) > 5:
         return True
     return False
@@ -98,7 +84,7 @@ def fetch_rss(medio):
         r.raise_for_status()
         feed = feedparser.parse(r.content)
         articulos = []
-        for entry in feed.entries[:15]:
+        for entry in feed.entries[:50]:
             titulo = entry.get("title", "").strip()
             if es_spam(titulo):
                 continue
@@ -132,7 +118,6 @@ def fetch_scrape(medio):
         vistos = set()
         articulos = []
         for el in soup.select(medio["selector"]):
-            # Solo aceptar títulos que tienen un link a una nota
             a = el.find("a") or el.find_parent("a")
             if not a or not a.get("href"):
                 continue
@@ -142,7 +127,6 @@ def fetch_scrape(medio):
             vistos.add(titulo)
             href = a["href"]
             link = href if href.startswith("http") else medio["url"].rstrip("/") + href
-            # Descartar links que no son notas (categorías, home, etc.)
             if link.rstrip("/") == medio["url"].rstrip("/"):
                 continue
             if any(link.endswith(s) for s in ["/", "#", "javascript:void(0)"]):
@@ -156,7 +140,7 @@ def fetch_scrape(medio):
                 "medio": medio["nombre"],
                 "tendencia": medio["tendencia"],
             })
-            if len(articulos) >= 15:
+            if len(articulos) >= 30:
                 break
         print(f"  SCRAPE {medio['nombre']:20s} — {len(articulos)} artículos")
         return articulos
@@ -164,36 +148,68 @@ def fetch_scrape(medio):
         print(f"  ERR    {medio['nombre']:20s} — {e}")
         return []
 
+def cargar_historial():
+    try:
+        with open("historial.json", encoding="utf-8") as f:
+            return json.load(f)
+    except:
+        return []
+
+def guardar_historial(historial):
+    with open("historial.json", "w", encoding="utf-8") as f:
+        json.dump(historial, f, ensure_ascii=False, indent=2)
+
 def main():
     print("\n=== Scraper Sesgo AR ===")
     print(f"Corriendo: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("(Con imágenes — puede tardar unos minutos)\n")
 
-    todos = []
-
+    # Traer noticias nuevas
+    nuevas = []
     print("-- Medios con RSS --")
     for medio in MEDIOS_RSS:
-        todos.extend(fetch_rss(medio))
-
+        nuevas.extend(fetch_rss(medio))
     print("\n-- Medios sin RSS (scraping directo) --")
     for medio in MEDIOS_SCRAPE:
-        todos.extend(fetch_scrape(medio))
+        nuevas.extend(fetch_scrape(medio))
 
+    # Cargar historial del día
+    historial = cargar_historial()
+
+    # Limpiar historial de más de 24 horas
+    ahora = datetime.now()
+    historial = [a for a in historial if
+        (ahora - datetime.fromisoformat(a.get("scrapeado_en", ahora.isoformat()))).total_seconds() < 86400
+    ]
+
+    # Agregar solo las noticias nuevas (por link)
+    links_existentes = {a["link"] for a in historial if a.get("link")}
+    agregadas = 0
+    for art in nuevas:
+        if art.get("link") and art["link"] not in links_existentes:
+            art["scrapeado_en"] = ahora.isoformat()
+            historial.append(art)
+            links_existentes.add(art["link"])
+            agregadas += 1
+
+    guardar_historial(historial)
+
+    # noticias.json = todas las del historial (últimas 24hs)
     output = {
-        "timestamp": datetime.now().isoformat(),
-        "total": len(todos),
+        "timestamp": ahora.isoformat(),
+        "total": len(historial),
         "por_tendencia": {
-            "K": len([a for a in todos if a["tendencia"] == "K"]),
-            "C": len([a for a in todos if a["tendencia"] == "C"]),
-            "L": len([a for a in todos if a["tendencia"] == "L"]),
+            "K": len([a for a in historial if a["tendencia"] == "K"]),
+            "C": len([a for a in historial if a["tendencia"] == "C"]),
+            "L": len([a for a in historial if a["tendencia"] == "L"]),
         },
-        "articulos": todos,
+        "articulos": historial,
     }
 
     with open("noticias.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\nTotal: {len(todos)} artículos guardados en noticias.json")
+    print(f"\nNuevas: {agregadas} | Total últimas 24hs: {len(historial)}")
     for t, label in TENDENCIA_LABEL.items():
         print(f"  {t} ({label}): {output['por_tendencia'][t]}")
 
