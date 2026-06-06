@@ -1,25 +1,81 @@
 {
-  "timestamp": "2026-06-05T22:02:21.080106",
-  "total": 75,
+  "timestamp": "2026-06-05T22:09:12.567988",
+  "total": 77,
   "por_tendencia": {
     "K": 17,
     "C": 38,
-    "L": 20
+    "L": 22
   },
   "articulos": [
+    {
+      "titulo": "El velatorio del Indio Solari será el domingo y aún resta definir el lugar donde se hará",
+      "link": "https://www.infobae.com/sociedad/policiales/2026/06/05/la-familia-del-indio-solari-se-contacto-con-racing-para-hacer-el-velatorio-publico-en-el-estadio-del-club/",
+      "imagen": "https://www.infobae.com/resizer/v2/HBJTFR72SNEVZHELIJFMZK6LBQ.jpg?auth=af09433eebc90bbfa5917687bffdc17b78d40fb0a7767f3373e8a426e800c6e6&smart=true&width=1920&height=1080",
+      "publicado": "Sat, 06 Jun 2026 01:01:43 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "¿Cómo estará el clima en Barcelona?",
+      "link": "https://www.infobae.com/espana/2026/06/06/como-estara-el-clima-en-barcelona/",
+      "imagen": "https://www.infobae.com/resizer/v2/B6IIPE4MN5EEVDO7Z2ZPJWTA7I.png?auth=2ea8e4bb362734e21be948f2970c283fc6410785658b01c5121ab6fe5e6e78b2&smart=true&width=1920&height=1080",
+      "publicado": "Sat, 06 Jun 2026 01:00:43 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "\"Perú puede ser el nuevo Singapur\", dice candidato Sánchez sobre inversiones portuarias",
+      "link": "https://www.infobae.com/america/agencias/2026/06/06/peru-puede-ser-el-nuevo-singapur-dice-candidato-sanchez-sobre-inversiones-portuarias/",
+      "imagen": "https://www.infobae.com/assets/images/logos/fallback-promo-image-1200x630.png",
+      "publicado": "Sat, 06 Jun 2026 01:00:39 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "Jugadores conmueven al brasileño André Jardine en su despedida del América",
+      "link": "https://www.infobae.com/espana/agencias/2026/06/06/jugadores-conmueven-al-brasileno-andre-jardine-en-su-despedida-del-america/",
+      "imagen": "https://www.infobae.com/assets/images/logos/fallback-promo-image-1200x630.png",
+      "publicado": "Sat, 06 Jun 2026 01:00:22 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "Nueva plataforma de IA de Sunarp permite encontrar criterios jurídicos en segundos",
+      "link": "https://www.infobae.com/peru/2026/06/06/nueva-plataforma-de-ia-de-sunarp-permite-encontrar-criterios-juridicos-en-segundos/",
+      "imagen": "https://www.infobae.com/resizer/v2/33E63CCNBNDVJN5PJHKLZYILG4.png?auth=46740b5dbabb1ca06569f2d218a58d9570de30736cbdbe5686d2b1f45a721763&smart=true&width=1920&height=1080",
+      "publicado": "Sat, 06 Jun 2026 01:00:20 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "Decretan confinamiento en San José del Guaviare por crisis humanitaria causada por las disidencias de las Farc",
+      "link": "https://www.infobae.com/colombia/2026/06/06/decretan-confinamiento-en-san-jose-del-guaviare-por-crisis-humanitaria-causada-por-las-disidencias-de-las-farc/",
+      "imagen": "https://www.infobae.com/resizer/v2/2K7KZF3VWJDKNIIBCULBP2LWQY.png?auth=d98b26bfb5cba74d09537ecfe679138cc11e2c48e6b05e2d4d6c1e03da072e20&smart=true&width=1890&height=1063",
+      "publicado": "Sat, 06 Jun 2026 00:58:32 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "El estancamiento en las negociaciones entre Estados Unidos e Irán se prolonga mientras el conflicto se acerca a los 100 días",
+      "link": "https://www.infobae.com/america/mundo/2026/06/06/el-estancamiento-en-las-negociaciones-entre-estados-unidos-e-iran-se-prolonga-mientras-el-conflicto-se-acerca-a-los-100-dias/",
+      "imagen": "https://www.infobae.com/resizer/v2/7CWS435TBVBFJMSVNONAPFILPQ.JPG?auth=c694cef985a97d0af61932bff7c4a561ffc2060196a9f9599d50ac8f2f36ea26&smart=true&width=5870&height=3302",
+      "publicado": "Sat, 06 Jun 2026 00:56:58 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
+      "link": "https://www.infobae.com/colombia/deportes/2026/06/05/colombia-vs-uruguay-en-vivo-liga-de-naciones-femenina-conmebol-siga-el-minuto-a-minuto-desde-el-pascual-guerrero/",
+      "imagen": "https://www.infobae.com/resizer/v2/U6IRO2XWEFHNJKQN5O7TAO2MMQ.jpg?auth=e6712559e22e0c76d016d57c0793524c78618943ff19543600baaefe3fdc7fb8&smart=true&width=960&height=540",
+      "publicado": "Sat, 06 Jun 2026 00:56:09 +0000",
+      "medio": "Infobae",
+      "tendencia": "L"
+    },
     {
       "titulo": "Cuál es el endulzante natural que puede brindar una recuperación energética rápida tras los entrenamientos",
       "link": "https://www.infobae.com/salud/ciencia/2026/06/06/cual-es-el-endulzante-natural-que-puede-brindar-una-recuperacion-energetica-rapida-tras-los-entrenamientos/",
       "imagen": "https://www.infobae.com/resizer/v2/XTYWOEFFKJCQJEIXUELZO6IKNI.png?auth=3835641e94c162980447c0441fce1df357f5caf20a27f416010c78c032f49e0d&smart=true&width=2752&height=1536",
       "publicado": "Sat, 06 Jun 2026 00:55:16 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "El velatorio del Indio Solari será el domingo y aún resta definir el lugar donde se hará",
-      "link": "https://www.infobae.com/sociedad/policiales/2026/06/05/la-familia-del-indio-solari-se-contacto-con-racing-para-hacer-el-velatorio-publico-en-el-estadio-del-club/",
-      "imagen": "https://www.infobae.com/resizer/v2/HBJTFR72SNEVZHELIJFMZK6LBQ.jpg?auth=af09433eebc90bbfa5917687bffdc17b78d40fb0a7767f3373e8a426e800c6e6&smart=true&width=1920&height=1080",
-      "publicado": "Sat, 06 Jun 2026 00:54:39 +0000",
       "medio": "Infobae",
       "tendencia": "L"
     },
@@ -40,14 +96,6 @@
       "tendencia": "L"
     },
     {
-      "titulo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
-      "link": "https://www.infobae.com/colombia/deportes/2026/06/05/colombia-vs-uruguay-en-vivo-liga-de-naciones-femenina-conmebol-siga-el-minuto-a-minuto-desde-el-pascual-guerrero/",
-      "imagen": "https://www.infobae.com/resizer/v2/U6IRO2XWEFHNJKQN5O7TAO2MMQ.jpg?auth=e6712559e22e0c76d016d57c0793524c78618943ff19543600baaefe3fdc7fb8&smart=true&width=960&height=540",
-      "publicado": "Sat, 06 Jun 2026 00:52:05 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
       "titulo": "Perú 0-1 Haití EN VIVO HOY: minuto a minuto del partido amistoso en Miami por fecha FIFA 2026",
       "link": "https://www.infobae.com/peru/deportes/2026/06/05/peru-vs-haiti-en-vivo-hoy-minuto-a-minuto-partido-amistoso-miami-fecha-fifa-2026-goles-resumen-resultado/",
       "imagen": "https://www.infobae.com/resizer/v2/F5LU5WRPYVFATDHJDCCRCJ4VHI.jpg?auth=78ff300447dd46337427c476badb21931437d3119a87c3126c625a309aa7956b&smart=true&width=1920&height=1080",
@@ -56,50 +104,26 @@
       "tendencia": "L"
     },
     {
-      "titulo": "Marcelo Tinelli anticipó cómo cubrirá su sexto Mundial: todo sobre su vuelta al periodismo deportivo",
-      "link": "https://www.infobae.com/deportes/2026/06/05/marcelo-tinelli-anticipo-como-cubrira-su-sexto-mundial-todo-sobre-su-vuelta-al-periodismo-deportivo/",
-      "imagen": "https://www.infobae.com/resizer/v2/67LFUVWTANAWPDQNP2QAAIXT6U.jpg?auth=ccd3743e15e0674820e5ef424701edc097ac53728003ab0a7fb57abc5cddcc7a&smart=true&width=1920&height=1280",
-      "publicado": "Sat, 06 Jun 2026 00:50:17 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "Los actores de Hollywood ratificaron un contrato con los estudios y las plataformas de streaming",
-      "link": "https://www.infobae.com/estados-unidos/2026/06/06/los-actores-de-hollywood-ratificaron-un-contrato-de-cuatro-anos-con-los-estudios-y-las-plataformas-de-streaming/",
-      "imagen": "https://www.infobae.com/resizer/v2/47ZQTQLPJNGBXP3LODJ5KA6KFE.jpg?auth=8305e5bceba462d678cf78c3048bd36db53be2c07f2963ebf2569a254981376e&smart=true&width=4330&height=2887",
-      "publicado": "Sat, 06 Jun 2026 00:49:38 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "Cuáles son las pruebas por las que Paola Durante es exonerada del caso Paco Stanley, según nuevo documental",
-      "link": "https://www.infobae.com/mexico/2026/06/06/cuales-son-las-pruebas-por-las-que-paola-durante-es-exonerada-del-caso-paco-stanley-segun-nuevo-documental/",
-      "imagen": "https://www.infobae.com/resizer/v2/DK7NMNGGCZEA5I4VDJ5YFATLVQ.jpg?auth=c9bf6d0126a811d283883bcc93ac507aad7e9869a005b656020f90f9f85356f3&smart=true&width=1920&height=1080",
-      "publicado": "Sat, 06 Jun 2026 00:48:34 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "El Dane reveló el dato de inflación de mayo de 2026: la variación anual fue del 5,84% y la mensual del 0,47%",
-      "link": "https://www.infobae.com/colombia/2026/06/05/el-dane-revelo-el-dato-de-inflacion-de-mayo-de-2026-la-variacion-anual-fue-del-584-y-la-mensual-del-047/",
-      "imagen": "https://www.infobae.com/resizer/v2/Y2567S3BCBENPIM3RFPOUNOKVE.png?auth=2bf0329b5a380f7b6d159a9826ba9ba28aa7e753b6e7b655014da9fd96e52d0f&smart=true&width=1890&height=1063",
-      "publicado": "Sat, 06 Jun 2026 00:48:09 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "Gobierno anunció que reanudará la cooperación energética con Ecuador tras el levantamiento conjunto de los aranceles",
-      "link": "https://www.infobae.com/colombia/2026/06/06/gobierno-anuncio-que-reanudara-la-cooperacion-energetica-con-ecuador-tras-el-levantamiento-conjunto-de-los-aranceles/",
-      "imagen": "https://www.infobae.com/resizer/v2/EDD3SULB7RHLPDTVXWN4VB3F7Q.png?auth=2f929d7689cfdcaa14e7cd5492dad84d6d68aef122471f911306b623d04383db&smart=true&width=1536&height=1024",
-      "publicado": "Sat, 06 Jun 2026 00:47:07 +0000",
-      "medio": "Infobae",
-      "tendencia": "L"
-    },
-    {
       "titulo": "La familia del Indio Solari confirmó que el velatorio público tendrá lugar el domingo",
       "link": "https://www.lanacion.com.ar/espectaculos/la-familia-del-indio-solari-confirmo-que-el-velorio-publico-tendra-lugar-el-domingo-nid05062026/",
       "imagen": "https://resizer.glanacion.com/resizer/v2/W4X3FBPXK5EA3BOWHEI3CIAXY4.png?auth=3ba83047fccc9dc453730e487868f787b229b968446ff19b16c08b478d524420&smart=true&width=516&height=411",
-      "publicado": "Sat, 06 Jun 2026 00:59:10 +0000",
+      "publicado": "Sat, 06 Jun 2026 01:04:43 +0000",
+      "medio": "La Nación",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "La ley HB 991 que complicaría a los conductores migrantes con licencia en Florida: la firmó Ron DeSantis",
+      "link": "https://www.lanacion.com.ar/estados-unidos/florida/la-ley-hb-991-que-complicaria-a-los-conductores-migrantes-con-licencia-en-florida-la-firmo-ron-nid05062026/",
+      "imagen": "https://resizer.glanacion.com/resizer/v2/M67AQIQU6NFLVD3DZ7VYVYIFKU.jpg?auth=1719eb61419c1dea4fab018493b44ba1d78b444623462688056dfdc31a08f681&smart=true&width=2000&height=1333",
+      "publicado": "Sat, 06 Jun 2026 01:02:00 +0000",
+      "medio": "La Nación",
+      "tendencia": "L"
+    },
+    {
+      "titulo": "Es oficial: la NASA reveló cuándo presentará al staff de los nuevos astronautas de la misión Artemis III",
+      "link": "https://www.lanacion.com.ar/el-mundo/es-oficial-la-nasa-confirmo-cuando-presentara-a-los-nuevos-astronautas-de-la-mision-artemis-iii-nid02062026/",
+      "imagen": "https://resizer.glanacion.com/resizer/v2/OKBZBJ5KUNB2JBGRFBXGJJGUEM.JPG?auth=d2484c6d360316c3a2bb6311c5c73099fd458437ceda370a8a0e2147dd541322&smart=true&width=1175&height=881",
+      "publicado": "Sat, 06 Jun 2026 01:01:00 +0000",
       "medio": "La Nación",
       "tendencia": "L"
     },
@@ -156,14 +180,6 @@
       "link": "https://www.lanacion.com.ar/politica/lazaro-baez-fue-internado-por-un-cuadro-de-pulmonia-y-se-agrava-su-estado-de-salud-nid05062026/",
       "imagen": "https://resizer.glanacion.com/resizer/v2/RGAKUS7I5VFITDVEDWPRUWV3EQ.jpeg?auth=72ba6aa2ac5f313a87480289a729cc365b9db1fe5e0236b4b4f27edb9ad91688&smart=true&width=2000&height=1333",
       "publicado": "Sat, 06 Jun 2026 00:38:40 +0000",
-      "medio": "La Nación",
-      "tendencia": "L"
-    },
-    {
-      "titulo": "Otamendi: el defensor que hizo de la convicción su mayor fortaleza",
-      "link": "https://www.lanacion.com.ar/videos/otamendi-el-defensor-que-hizo-de-la-conviccion-su-mayor-fortaleza-nid05062026/",
-      "imagen": "https://resizer.glanacion.com/resizer/v2/7BJSXPKQDBHGBE5OEEYKLS5CEQ.jpg?auth=f3f73c54c966e239b698aa98e9c60c5ec293f6d3e31cdbd8ebf025a035ac1120&smart=true&width=600&height=400",
-      "publicado": "Sat, 06 Jun 2026 00:27:59 +0000",
       "medio": "La Nación",
       "tendencia": "L"
     },
@@ -237,6 +253,14 @@
       "imagen": "https://www.clarin.com/img/2026/06/05/_AUAAucUG_1200x630__1.jpg",
       "publicado": "Fri, 05 Jun 2026 22:39:36 +0000",
       "medio": "Clarín",
+      "tendencia": "C"
+    },
+    {
+      "titulo": "El kiosquero, el Papa y el algoritmo",
+      "link": "https://www.perfil.com/noticias/opinion/el-kiosquero-el-papa-y-el-algoritmo.phtml",
+      "imagen": "https://fotos.perfil.com/2025/09/04/trim/540/304/el-gobierno-habilita-a-kioscos-de-diarios-a-funcionar-como-operadores-postales-2093472.jpg",
+      "publicado": "Sat, 06 Jun 2026 00:55:29 GMT",
+      "medio": "Perfil",
       "tendencia": "C"
     },
     {
@@ -340,14 +364,6 @@
       "link": "https://www.perfil.com/noticias/bloomberg/bc-oro-borra-ganancias-del-ano-por-apuestas-a-alzas-de-tasas-de-la-fed.phtml",
       "imagen": "https://fotos.perfil.com/2025/02/25/trim/540/304/reserva-federal-1973699.jpg",
       "publicado": "Fri, 05 Jun 2026 21:20:00 GMT",
-      "medio": "Perfil",
-      "tendencia": "C"
-    },
-    {
-      "titulo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
-      "link": "https://www.perfil.com/noticias/protagonistas/las-ultimas-horas-del-indio-solari-del-accidente-en-su-casa-a-la-investigacion-judicial.phtml",
-      "imagen": "https://fotos.perfil.com/2026/06/05/trim/540/304/indio-solari-2254683.jpg",
-      "publicado": "Fri, 05 Jun 2026 21:18:00 GMT",
       "medio": "Perfil",
       "tendencia": "C"
     },
