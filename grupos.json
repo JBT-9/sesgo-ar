@@ -349,6 +349,65 @@
     "tema": "Cultura"
   },
   {
+    "titulo_representativo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
+    "cantidad_articulos": 4,
+    "medios": [
+      "Perfil",
+      "El Destape",
+      "Ámbito",
+      "La Nación"
+    ],
+    "tendencias_cubren": [
+      "C",
+      "K",
+      "L"
+    ],
+    "blind_spot": [
+      "Infobae",
+      "Clarín",
+      "Página 12"
+    ],
+    "articulos": [
+      {
+        "titulo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
+        "link": "https://www.perfil.com/noticias/protagonistas/las-ultimas-horas-del-indio-solari-del-accidente-en-su-casa-a-la-investigacion-judicial.phtml",
+        "imagen": "https://fotos.perfil.com/2026/06/05/trim/540/304/indio-solari-2254683.jpg",
+        "publicado": "Fri, 05 Jun 2026 21:18:00 GMT",
+        "medio": "Perfil",
+        "tendencia": "C",
+        "scrapeado_en": "2026-06-05T22:16:36.095477"
+      },
+      {
+        "titulo": "Las mejores fotos de la despedida del Indio Solari en Plaza de Mayo",
+        "link": "https://www.eldestapeweb.com/sociedad/mejores-fotos-despedida-indio-solari-plaza-mayo-20266521744",
+        "imagen": "https://cdn.eldestapeweb.com/eldestape/062026/1780700855485.JPG?&cw=1200&ch=675",
+        "publicado": "",
+        "medio": "El Destape",
+        "tendencia": "K",
+        "scrapeado_en": "2026-06-05T22:16:36.095477"
+      },
+      {
+        "titulo": "El mundo despide al Indio Solari: mensajes de la política, artistas y clubes de fútbol",
+        "link": "https://www.ambito.com/espectaculos/las-reacciones-la-muerte-carlos-indio-solari-n6285440",
+        "imagen": "https://media.ambito.com/p/3b556d55162853d6b87908c6dbce55a8/adjuntos/239/imagenes/043/420/0043420386/1200x675/654x229:674x249/indio-solari.jpeg",
+        "publicado": "",
+        "medio": "Ámbito",
+        "tendencia": "C",
+        "scrapeado_en": "2026-06-05T22:16:36.095477"
+      },
+      {
+        "titulo": "Los fans de Indio Solari despiden al ídolo en Plaza de Mayo: banderas, canciones y misa ricotera",
+        "link": "https://www.lanacion.com.ar/espectaculos/personajes/los-fans-de-indio-solari-despiden-al-idolo-en-plaza-de-mayo-banderas-canciones-y-misa-ricotera-nid05062026/",
+        "imagen": "https://resizer.glanacion.com/resizer/v2/I667YCE53FG23PNVJD3MN7W7NI.jpg?auth=8c5df2fdb079f49c6363a1b873c2d07369cdb0e1079e49a3c5b99d277bd5e09d&smart=true&width=2000&height=1333",
+        "publicado": "Sat, 06 Jun 2026 01:15:25 +0000",
+        "medio": "La Nación",
+        "tendencia": "L",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "Judicial"
+  },
+  {
     "titulo_representativo": "Cerdos, ratas y vacas ante el juez: la historia olvidada de los juicios a animales en la Europa medieval",
     "cantidad_articulos": 3,
     "medios": [
@@ -396,55 +455,6 @@
       }
     ],
     "tema": "Deportes"
-  },
-  {
-    "titulo_representativo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
-    "cantidad_articulos": 3,
-    "medios": [
-      "Perfil",
-      "El Destape",
-      "Ámbito"
-    ],
-    "tendencias_cubren": [
-      "C",
-      "K"
-    ],
-    "blind_spot": [
-      "Infobae",
-      "La Nación",
-      "Clarín",
-      "Página 12"
-    ],
-    "articulos": [
-      {
-        "titulo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
-        "link": "https://www.perfil.com/noticias/protagonistas/las-ultimas-horas-del-indio-solari-del-accidente-en-su-casa-a-la-investigacion-judicial.phtml",
-        "imagen": "https://fotos.perfil.com/2026/06/05/trim/540/304/indio-solari-2254683.jpg",
-        "publicado": "Fri, 05 Jun 2026 21:18:00 GMT",
-        "medio": "Perfil",
-        "tendencia": "C",
-        "scrapeado_en": "2026-06-05T22:16:36.095477"
-      },
-      {
-        "titulo": "Las mejores fotos de la despedida del Indio Solari en Plaza de Mayo",
-        "link": "https://www.eldestapeweb.com/sociedad/mejores-fotos-despedida-indio-solari-plaza-mayo-20266521744",
-        "imagen": "https://cdn.eldestapeweb.com/eldestape/062026/1780700855485.JPG?&cw=1200&ch=675",
-        "publicado": "",
-        "medio": "El Destape",
-        "tendencia": "K",
-        "scrapeado_en": "2026-06-05T22:16:36.095477"
-      },
-      {
-        "titulo": "El mundo despide al Indio Solari: mensajes de la política, artistas y clubes de fútbol",
-        "link": "https://www.ambito.com/espectaculos/las-reacciones-la-muerte-carlos-indio-solari-n6285440",
-        "imagen": "https://media.ambito.com/p/3b556d55162853d6b87908c6dbce55a8/adjuntos/239/imagenes/043/420/0043420386/1200x675/654x229:674x249/indio-solari.jpeg",
-        "publicado": "",
-        "medio": "Ámbito",
-        "tendencia": "C",
-        "scrapeado_en": "2026-06-05T22:16:36.095477"
-      }
-    ],
-    "tema": "Judicial"
   },
   {
     "titulo_representativo": "De qué murió el Indio Solari: cómo la enfermedad afectó su carrera y su retiro de los recitales",
@@ -1339,6 +1349,46 @@
       }
     ],
     "tema": "Cultura"
+  },
+  {
+    "titulo_representativo": "Mercados: el dólar oficial retomó su senda alcista, mientras cayeron las reservas y sube el riesgo país",
+    "cantidad_articulos": 2,
+    "medios": [
+      "Ámbito",
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "C",
+      "L"
+    ],
+    "blind_spot": [
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Página 12",
+      "El Destape"
+    ],
+    "articulos": [
+      {
+        "titulo": "Mercados: el dólar oficial retomó su senda alcista, mientras cayeron las reservas y sube el riesgo país",
+        "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-viernes-5-junio-n6285376",
+        "imagen": "https://media.ambito.com/p/8169d5aa4c4cc8fa3fb65305be76b8cb/adjuntos/239/imagenes/042/746/0042746619/mercados-finanzas-vivo-acciones-bolsas-inversiones.jpg",
+        "publicado": "",
+        "medio": "Ámbito",
+        "tendencia": "C",
+        "scrapeado_en": "2026-06-05T22:16:36.095477"
+      },
+      {
+        "titulo": "Dólar se vende hasta en S/ 3,52 en casas de cambio tras enorme apreciación por incertidumbre de la segunda vuelta",
+        "link": "https://www.infobae.com/peru/2026/06/06/dolar-se-vende-hasta-en-s-352-en-casas-de-cambio-tras-enorme-apreciacion-por-incertidumbre-de-la-segunda-vuelta/",
+        "imagen": "https://www.infobae.com/resizer/v2/34HDDWZAVNEPXAYAAVUGVAREIA.jpg?auth=a93cb2a7bcd5f48cb9e4f57b2d6e3d4443d4d39c3d475fee4d2b2d2b7f62181d&smart=true&width=1920&height=1080",
+        "publicado": "Sat, 06 Jun 2026 01:11:52 +0000",
+        "medio": "Infobae",
+        "tendencia": "L",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "¿Lloverá durante el inicio del Mundial? Cuánto durarán y cuáles serán las alcaldías más afectadas del 6 al 12 de junio en CDMX",
@@ -3438,7 +3488,7 @@
         "scrapeado_en": "2026-06-05T22:16:36.095477"
       }
     ],
-    "tema": "Judicial"
+    "tema": "General"
   },
   {
     "titulo_representativo": "Disturbios en la Misa Ricotera: intervino la policia en Plaza de Mayo",
@@ -3708,7 +3758,7 @@
         "scrapeado_en": "2026-06-05T22:16:36.095477"
       }
     ],
-    "tema": "General"
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Una despedida: el Indio vence al tiempo",
@@ -4158,7 +4208,7 @@
         "scrapeado_en": "2026-06-05T22:16:36.095477"
       }
     ],
-    "tema": "Economía"
+    "tema": "General"
   },
   {
     "titulo_representativo": "Masiva liquidación en Wall Street: el Nasdaq se hundió más de 4% y tuvo su peor día en más de un año",
@@ -4431,36 +4481,6 @@
     "tema": "Deportes"
   },
   {
-    "titulo_representativo": "Mercados: el dólar oficial retomó su senda alcista, mientras cayeron las reservas y sube el riesgo país",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Ámbito"
-    ],
-    "tendencias_cubren": [
-      "C"
-    ],
-    "blind_spot": [
-      "Infobae",
-      "La Nación",
-      "Clarín",
-      "Perfil",
-      "Página 12",
-      "El Destape"
-    ],
-    "articulos": [
-      {
-        "titulo": "Mercados: el dólar oficial retomó su senda alcista, mientras cayeron las reservas y sube el riesgo país",
-        "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-viernes-5-junio-n6285376",
-        "imagen": "https://media.ambito.com/p/8169d5aa4c4cc8fa3fb65305be76b8cb/adjuntos/239/imagenes/042/746/0042746619/mercados-finanzas-vivo-acciones-bolsas-inversiones.jpg",
-        "publicado": "",
-        "medio": "Ámbito",
-        "tendencia": "C",
-        "scrapeado_en": "2026-06-05T22:16:36.095477"
-      }
-    ],
-    "tema": "General"
-  },
-  {
     "titulo_representativo": "Las mujeres en la cima: quiénes son las CEOs argentinas que lideran grandes compañías",
     "cantidad_articulos": 1,
     "medios": [
@@ -4519,5 +4539,125 @@
       }
     ],
     "tema": "Economía"
+  },
+  {
+    "titulo_representativo": "María Corina Machado y Fujimori conversan sobre caminos políticos \"que hay que evitar\"",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
+    ],
+    "articulos": [
+      {
+        "titulo": "María Corina Machado y Fujimori conversan sobre caminos políticos \"que hay que evitar\"",
+        "link": "https://www.infobae.com/america/agencias/2026/06/06/maria-corina-machado-y-fujimori-conversan-sobre-caminos-politicos-que-hay-que-evitar/",
+        "imagen": "https://www.infobae.com/assets/images/logos/fallback-promo-image-1200x630.png",
+        "publicado": "Sat, 06 Jun 2026 01:15:38 +0000",
+        "medio": "Infobae",
+        "tendencia": "L",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "General"
+  },
+  {
+    "titulo_representativo": "Guadalajara recibe a Corea del Sur con mariachi y ambiente festivo",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
+    ],
+    "articulos": [
+      {
+        "titulo": "Guadalajara recibe a Corea del Sur con mariachi y ambiente festivo",
+        "link": "https://www.infobae.com/espana/agencias/2026/06/06/guadalajara-recibe-a-corea-del-sur-con-mariachi-y-ambiente-festivo/",
+        "imagen": "https://www.infobae.com/assets/images/logos/fallback-promo-image-1200x630.png",
+        "publicado": "Sat, 06 Jun 2026 01:15:16 +0000",
+        "medio": "Infobae",
+        "tendencia": "L",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "Descartar"
+  },
+  {
+    "titulo_representativo": "Honduras: Captura a segundo implicado en masacre de 20 personas Rigores, Colón",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
+    ],
+    "articulos": [
+      {
+        "titulo": "Honduras: Captura a segundo implicado en masacre de 20 personas Rigores, Colón",
+        "link": "https://www.infobae.com/honduras/2026/06/06/honduras-captura-a-segundo-implicado-en-masacre-de-20-personas-rigores-colon/",
+        "imagen": "https://www.infobae.com/resizer/v2/MZUW7BLDCRDD3ORFRP46VYNGU4.jpeg?auth=7ad699bfa8485e903e4c04b6b0ab91074c4999d9f4e8be3be7c8a83f0eb0423b&smart=true&width=1178&height=1008",
+        "publicado": "Sat, 06 Jun 2026 01:12:34 +0000",
+        "medio": "Infobae",
+        "tendencia": "L",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "Seguridad"
+  },
+  {
+    "titulo_representativo": "Existe hace 320 años y es una de las catedrales poco conocidas de Buenos Aires",
+    "cantidad_articulos": 1,
+    "medios": [
+      "El Destape"
+    ],
+    "tendencias_cubren": [
+      "K"
+    ],
+    "blind_spot": [
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12"
+    ],
+    "articulos": [
+      {
+        "titulo": "Existe hace 320 años y es una de las catedrales poco conocidas de Buenos Aires",
+        "link": "https://www.eldestapeweb.com/sociedad/existe-hace-320-anos-catedrales-poco-conocidas-buenos-aires-queda-solo-30-minutos-caba-202665221658",
+        "imagen": "https://cdn.eldestapeweb.com/eldestape/062026/1780688245587.jpg?&cw=1200&ch=675",
+        "publicado": "",
+        "medio": "El Destape",
+        "tendencia": "K",
+        "scrapeado_en": "2026-06-05T22:25:08.806745"
+      }
+    ],
+    "tema": "Sociedad"
   }
 ]
