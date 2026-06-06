@@ -346,14 +346,13 @@ async function cargarDatos() {
     const conScore = grupos.map(g => ({ g, score: relevancia(g) }));
     conScore.sort((a, b) => b.score - a.score);
 
-    let portada = conScore.filter(x => x.score >= 8).slice(0, 12).map(x => x.g);
-    if (portada.length < 8) portada = conScore.slice(0, 15).map(x => x.g);
+    let portada = conScore.filter(x => x.score >= 8 && x.g.cantidad_articulos > 1).slice(0, 12).map(x => x.g);
+    if (portada.length < 8) portada = conScore.filter(x => x.g.cantidad_articulos > 1).slice(0, 15).map(x => x.g);
 
     const multi = grupos.filter(g => g.cantidad_articulos > 1).length;
     const conAusente = grupos.filter(g => (g.blind_spot||[]).length > 0 && g.cantidad_articulos > 1).length;
     document.getElementById("stats-bar").innerHTML = `
-      <div class="stat-card"><div class="num">${grupos.length}</div><div class="lbl">Noticias detectadas</div></div>
-      <div class="stat-card"><div class="num">${multi}</div><div class="lbl">Cubiertas por varios medios</div></div>
+      <div class="stat-card"><div class="num">${multi}</div><div class="lbl">Noticias comparadas</div></div>
       <div class="stat-card"><div class="num">${conAusente}</div><div class="lbl">Con ausencias destacadas</div></div>
     `;
 
@@ -372,9 +371,7 @@ async function cargarDatos() {
     }
     document.getElementById("cards-portada").innerHTML = portadaHTML || `<div class="no-results">No hay noticias relevantes por ahora.</div>`;
 
-    document.getElementById("cards-todas").innerHTML = conScore.filter(({g}) => g.tema !== "Descartar").map(({g}) =>
-      g.cantidad_articulos > 1 ? renderCard(g) : renderSingleRow(g)
-    ).join("");
+    document.getElementById("cards-todas").innerHTML = conScore.filter(({g}) => g.cantidad_articulos > 1 && g.tema !== "Descartar").map(({g}) => renderCard(g)).join("");
 
     setupSearch(grupos);
 
