@@ -35,13 +35,47 @@ MEDIOS_SCRAPE = [
     {"nombre": "El Cronista",      "url": "https://www.cronista.com/",     "selector": "h2, h3", "tendencia": "C"},
 ]
 
+# Palabras que indican que el título es navegación o sección del sitio, no una noticia
+SPAM_EXACTO = {
+    "cultura y espectáculos", "política y economía", "sociedad", "deportes",
+    "economía", "política", "internacional", "seguridad", "judicial",
+    "últimas noticias", "más noticias", "seguimiento minuto a minuto",
+    "tiempoargentino", "sumate a la comunidad de ámbito", "finanzas y economía",
+    "idea management", "martín fierro", "lanzamientos", "inauguración",
+    "opinión", "atención", "documentos", "medida", "inversión", "inversiones",
+    "sobre 55 hectáreas", "jugá al desafío mundialista de el destape",
+}
+
+SPAM_PREFIJOS = [
+    "por redacción", "por ", "foto:", "video:", "canal e",
+    "mirá en vivo", "seguí en vivo", "en vivo |",
+]
+
+SPAM_PALABRAS = [
+    "quiniela", "casino", "ruleta", "poker", "slot", "apuesta",
+    "suscribite", "sumate", "newsletter",
+]
+
 def es_spam(titulo):
     if not titulo or len(titulo) < 20:
         return True
     if any(ord(c) > 1000 for c in titulo):
         return True
-    palabras_spam = ["quiniela", "casino", "ruleta", "poker", "slot", "apuesta"]
-    if any(p in titulo.lower() for p in palabras_spam):
+    t = titulo.lower().strip()
+    # Títulos exactos de secciones
+    if t in SPAM_EXACTO:
+        return True
+    # Prefijos de autor o sección
+    if any(t.startswith(p) for p in SPAM_PREFIJOS):
+        return True
+    # Palabras spam
+    if any(p in t for p in SPAM_PALABRAS):
+        return True
+    # Títulos que terminan en punto y son cortos (etiquetas de sección)
+    if t.endswith(".") and len(titulo.split()) <= 3:
+        return True
+    # Títulos TODO EN MAYÚSCULAS (generalmente son secciones o CTAs)
+    if titulo == titulo.upper() and len(titulo) > 5:
         return True
     return False
 
@@ -98,16 +132,22 @@ def fetch_scrape(medio):
         vistos = set()
         articulos = []
         for el in soup.select(medio["selector"]):
+            # Solo aceptar títulos que tienen un link a una nota
+            a = el.find("a") or el.find_parent("a")
+            if not a or not a.get("href"):
+                continue
             titulo = el.get_text(strip=True)
             if es_spam(titulo) or titulo in vistos:
                 continue
             vistos.add(titulo)
-            link = ""
-            a = el.find("a") or el.find_parent("a")
-            if a and a.get("href"):
-                href = a["href"]
-                link = href if href.startswith("http") else medio["url"].rstrip("/") + href
-            imagen = obtener_imagen(link) if link else ""
+            href = a["href"]
+            link = href if href.startswith("http") else medio["url"].rstrip("/") + href
+            # Descartar links que no son notas (categorías, home, etc.)
+            if link.rstrip("/") == medio["url"].rstrip("/"):
+                continue
+            if any(link.endswith(s) for s in ["/", "#", "javascript:void(0)"]):
+                continue
+            imagen = obtener_imagen(link)
             articulos.append({
                 "titulo": titulo,
                 "link": link,
