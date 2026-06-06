@@ -47,7 +47,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Dieron a conocer el resultado preliminar de la autopsia del Indio Solari: \"Un ACV no traumático\"",
@@ -89,7 +90,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Se conoció la causa de la muerte del Indio Solari: la autopsia confirma un ACV",
@@ -122,7 +124,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
@@ -155,7 +158,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Judicial"
   },
   {
     "titulo_representativo": "Murió el Indio Solari: la Shell de Córdoba, los dolores dulces y la luna por copar",
@@ -188,7 +192,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Las mejores 8 frases del Indio Solari, histórico del rock argentino y de Los Redondos",
@@ -221,7 +226,158 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
+  },
+  {
+    "titulo_representativo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
+        "link": "https://www.infobae.com/colombia/deportes/2026/06/05/colombia-vs-uruguay-en-vivo-liga-de-naciones-femenina-conmebol-siga-el-minuto-a-minuto-desde-el-pascual-guerrero/",
+        "imagen": "https://www.infobae.com/resizer/v2/TK2I3BI4FFEM5MSS36M2HEOV4M.png?auth=207fdb8edabce2758e388c82b77ae77fa02350bc5a31afe69cb83e52addb1b51&smart=true&width=1477&height=862",
+        "publicado": "Sat, 06 Jun 2026 00:19:39 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "Deportes"
+  },
+  {
+    "titulo_representativo": "Día Mundial del Medio Ambiente 2026: por qué se celebra el 5 de junio y cuál es el mensaje de este año",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "Día Mundial del Medio Ambiente 2026: por qué se celebra el 5 de junio y cuál es el mensaje de este año",
+        "link": "https://www.infobae.com/peru/2026/06/06/dia-mundial-del-medio-ambiente-2026-por-que-se-celebra-el-5-de-junio-y-cual-es-el-mensaje-de-este-ano/",
+        "imagen": "https://www.infobae.com/resizer/v2/VYKIS3TIMRDCJHDMOFIVHX5XHI.jpg?auth=e8cd8d5a74083f8d85cba6f99674de5e112cda3cd62d1a03726af9e30f7edce4&smart=true&width=1200&height=900",
+        "publicado": "Sat, 06 Jun 2026 00:17:31 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "Sociedad"
+  },
+  {
+    "titulo_representativo": "Resultado Chontico Noche: números ganadores del último sorteo hoy, viernes 5 de junio de 2026",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "Resultado Chontico Noche: números ganadores del último sorteo hoy, viernes 5 de junio de 2026",
+        "link": "https://www.infobae.com/colombia/2026/06/06/resultado-chontico-noche-numeros-ganadores-del-ultimo-sorteo-hoy-viernes-5-de-junio-de-2026/",
+        "imagen": "https://www.infobae.com/resizer/v2/TLT5HB7AKZGJBHFY2MHPRLUUOI.png?auth=8e11c3583cfe8c4c1decc2c871c5ab1ab35cf9e49317be16e99e26e4612f1486&smart=true&width=1920&height=1080",
+        "publicado": "Sat, 06 Jun 2026 00:16:18 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "Deportes"
+  },
+  {
+    "titulo_representativo": "Así se movió la fortuna de los 10 millonarios más ricos del planeta",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "Así se movió la fortuna de los 10 millonarios más ricos del planeta",
+        "link": "https://www.infobae.com/noticias/2026/06/06/asi-se-movio-la-fortuna-de-los-10-millonarios-mas-ricos-del-planeta/",
+        "imagen": "https://www.infobae.com/resizer/v2/XTLYJJRXGVEITGIF76KIR3DQPY.png?auth=e66d6f9d5863c49d249c81142fd620cb57a12aecb543887009913014de761a93&smart=true&width=1920&height=1080",
+        "publicado": "Sat, 06 Jun 2026 00:15:59 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "Economía"
+  },
+  {
+    "titulo_representativo": "La inflación interanual de Colombia en mayo subió al 5,84 %",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "La inflación interanual de Colombia en mayo subió al 5,84 %",
+        "link": "https://www.infobae.com/america/agencias/2026/06/06/la-inflacion-interanual-de-colombia-en-mayo-subio-al-584/",
+        "imagen": "https://www.infobae.com/assets/images/logos/fallback-promo-image-1200x630.png",
+        "publicado": "Sat, 06 Jun 2026 00:15:55 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "Economía"
+  },
+  {
+    "titulo_representativo": "AICM: estos son los vuelos cancelados y demorados de este 5 de junio",
+    "cantidad_articulos": 1,
+    "medios": [
+      "Infobae"
+    ],
+    "tendencias_cubren": [
+      "L"
+    ],
+    "blind_spot": [
+      "C",
+      "K"
+    ],
+    "articulos": [
+      {
+        "titulo": "AICM: estos son los vuelos cancelados y demorados de este 5 de junio",
+        "link": "https://www.infobae.com/mexico/2026/06/06/aicm-estos-son-los-vuelos-cancelados-y-demorados-de-este-5-de-junio/",
+        "imagen": "https://www.infobae.com/resizer/v2/CMVDXZ7HBNDMZAW7GUGISD32D4.jpg?auth=fd780efd04da6bc6657766960a77be0fdc35bc06a966a2e995d067f0537c0450&smart=true&width=1920&height=1080",
+        "publicado": "Sat, 06 Jun 2026 00:15:52 +0000",
+        "medio": "Infobae",
+        "tendencia": "L"
+      }
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La coalición 'Escudo de las Américas' reitera su apoyo a Bolivia ante los bloqueos y protestas",
@@ -245,7 +401,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "Sudáfrica agradece hospitalidad mexicana previo a su debut en el Mundial",
@@ -269,7 +426,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Perú 0-0 Haití EN VIVO HOY: minuto a minuto del partido amistoso en Miami por fecha FIFA 2026",
@@ -293,7 +451,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Velatorio del Indio Solari: la familia se contactó con Racing y el Gobierno ofreció Tecnópolis",
@@ -317,31 +476,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
-  },
-  {
-    "titulo_representativo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
     ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
-        "link": "https://www.infobae.com/colombia/deportes/2026/06/05/colombia-vs-uruguay-en-vivo-liga-de-naciones-femenina-conmebol-siga-el-minuto-a-minuto-desde-el-pascual-guerrero/",
-        "imagen": "https://www.infobae.com/resizer/v2/TK2I3BI4FFEM5MSS36M2HEOV4M.png?auth=207fdb8edabce2758e388c82b77ae77fa02350bc5a31afe69cb83e52addb1b51&smart=true&width=1477&height=862",
-        "publicado": "Sat, 06 Jun 2026 00:13:49 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "La industria guatemalteca de cosméticos e higiénicos eleva 9% sus exportaciones hasta USD 168,7 millones",
@@ -365,7 +501,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Por qué las madres de futbolistas están dando forma al futuro del fútbol en Estados Unidos",
@@ -389,7 +526,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Se suman extrabajadores de Mexicana de Aviación a manifestaciones en el marco del Mundial 2026",
@@ -413,7 +551,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Mundial 2026, en VIVO: últimas noticias del 5 de junio, partidos amistosos, anuncios y todas las perlitas",
@@ -437,127 +576,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
-  },
-  {
-    "titulo_representativo": "Zelensky afirmó que Putin eligió la guerra al rechazar su propuesta de negociación",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
     ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "Zelensky afirmó que Putin eligió la guerra al rechazar su propuesta de negociación",
-        "link": "https://www.infobae.com/america/mundo/2026/06/06/zelensky-afirmo-que-putin-eligio-la-guerra-al-rechazar-su-propuesta-de-negociacion/",
-        "imagen": "https://www.infobae.com/resizer/v2/XOELZFM7ZNHLFGF6LUDX55STAA.jpg?auth=04085b4bb10b42ae7ec30099e140da2f711c26a1f6005c9d964fa6793d9cd247&smart=true&width=1920&height=1280",
-        "publicado": "Sat, 06 Jun 2026 00:09:53 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
-  },
-  {
-    "titulo_representativo": "Subsidio al transporte público se otorgará únicamente a vehículos que reporten sus rutas por GPS a la ATU",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
-    ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "Subsidio al transporte público se otorgará únicamente a vehículos que reporten sus rutas por GPS a la ATU",
-        "link": "https://www.infobae.com/peru/2026/06/06/subsidio-al-transporte-publico-se-otorgara-unicamente-a-vehiculos-que-reporten-sus-rutas-por-gps-a-la-atu/",
-        "imagen": "https://www.infobae.com/resizer/v2/LTFV76H5EFB6JG6OZEGIC4L74I.jpg?auth=37d4f617fbd4fbcb83084e33c38463beaec4fe68c8d4bdef06e54de22a7d9082&smart=true&width=1920&height=1080",
-        "publicado": "Sat, 06 Jun 2026 00:09:45 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
-  },
-  {
-    "titulo_representativo": "Archivan el proceso contra Abelardo de la Espriella por queja de David Murcia, fundador de la pirámide DMG: ¿qué ocurrió?",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
-    ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "Archivan el proceso contra Abelardo de la Espriella por queja de David Murcia, fundador de la pirámide DMG: ¿qué ocurrió?",
-        "link": "https://www.infobae.com/colombia/2026/06/06/archivan-el-proceso-contra-abelardo-de-la-espriella-por-queja-de-david-murcia-fundador-de-la-piramide-dmg-que-ocurrio/",
-        "imagen": "https://www.infobae.com/resizer/v2/JHMFPXDKGNEGLNMZFEYF7SUM7U.jpg?auth=7e399e6791d8840b84e3d062cab2ec018eec614d2be52726f668491bace272d8&smart=true&width=1920&height=1080",
-        "publicado": "Sat, 06 Jun 2026 00:08:44 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
-  },
-  {
-    "titulo_representativo": "El nuevo lujo tecnológico: un televisor que se transforma en adorno cuando no lo ves",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
-    ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "El nuevo lujo tecnológico: un televisor que se transforma en adorno cuando no lo ves",
-        "link": "https://www.infobae.com/tecno/2026/06/06/el-nuevo-lujo-tecnologico-un-televisor-que-se-transforma-en-adorno-cuando-no-lo-ves/",
-        "imagen": "https://www.infobae.com/resizer/v2/U6TPLY66LNHN3LBU25SGMFL22M.png?auth=96bbd62a81bf3b477ccec80edf22a94674b2ff179e538f1c6cc22c3d69f9420f&smart=true&width=1920&height=1080",
-        "publicado": "Sat, 06 Jun 2026 00:08:31 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
-  },
-  {
-    "titulo_representativo": "EN VIVO | Seguridad, narcotráfico y crimen en México hoy 5 de junio: el cártel que tiene más dinero que cualquier banco",
-    "cantidad_articulos": 1,
-    "medios": [
-      "Infobae"
-    ],
-    "tendencias_cubren": [
-      "L"
-    ],
-    "blind_spot": [
-      "C",
-      "K"
-    ],
-    "articulos": [
-      {
-        "titulo": "EN VIVO | Seguridad, narcotráfico y crimen en México hoy 5 de junio: el cártel que tiene más dinero que cualquier banco",
-        "link": "https://www.infobae.com/mexico/2026/06/05/en-vivo-seguridad-narcotrafico-y-crimen-en-mexico-hoy-5-de-junio/",
-        "imagen": "https://www.infobae.com/resizer/v2/OPKAQH54WRFKXETH7B36TZGD4M.png?auth=985227c71cd99c45896764ffca68a085612ea6d10b60d71984020bc3bcfd57df&smart=true&width=1408&height=768",
-        "publicado": "Sat, 06 Jun 2026 00:07:07 +0000",
-        "medio": "Infobae",
-        "tendencia": "L"
-      }
-    ]
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Mundial 2026, en vivo: Argentina volvió al primer puesto en el ranking FIFA y cómo sigue recuperación de Messi",
@@ -581,7 +601,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Javier Milei y sus medidas, en vivo: la aprobación del pliego de Michelli, Macri en Santa Fe y la nueva compra de dólares del Banco Central",
@@ -605,7 +626,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "A qué hora de EE.UU. juegan New York Knicks vs. San Antonio Spurs, hoy: transmisión en vivo de las Finales de la NBA",
@@ -629,7 +651,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Así son los drones diseñados por un exsoldado de EE.UU. que ayudarán a responder a tiroteos en las escuelas de Texas",
@@ -653,7 +676,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "El fuerte testimonio de Ivana Figueiras sobre el conflicto familiar con la actual pareja del padre de su hija",
@@ -677,7 +701,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "El Gobierno intenta comunicarse con la familia del Indio Solari y ofrece Tecnópolis como lugar para el velatorio",
@@ -701,7 +726,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "El imponente barco en el que se hospeda Franco Colapinto en Mónaco",
@@ -725,7 +751,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Qué dice la psicología de las personas que escriben a mano en lugar de usar su celular",
@@ -749,7 +776,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Desafío viral: encontrá las siete diferencias entre las plantas",
@@ -773,7 +801,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Simularon 10.000 veces los resultados del Mundial: este equipo será el campeón",
@@ -797,7 +826,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Mauricio Macri cuestionó las idas y vueltas de Milei con el nombramiento de jueces: \"No podemos manosear algo tan importante como el sistema judicial\"",
@@ -821,7 +851,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Inocente búsqueda de empleo",
@@ -845,7 +876,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Aventuras en el cine",
@@ -869,7 +901,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El Gobierno intentó comunicarse con la familia del Indio Solari para organizar el funeral en Tecnópolis: \"No hemos tenido respuestas\"",
@@ -893,7 +926,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Los científicos crearon un reloj genético que predice cuándo va a morir una persona y también puede medir su edad biológica real",
@@ -917,7 +951,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La misa ricotera copó la Plaza de Mayo para despedir al Indio Solari: \"Es algo inexplicable\"",
@@ -941,7 +976,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Líbano acusó a Irán de usarlo como \"moneda de cambio\" con Estados Unidos y lo instó a dejar de \"interferir\" en el país",
@@ -965,7 +1001,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Riquelme eligió al Vasco Arruabarrena, que se prueba el traje para su revancha como entrenador de Boca",
@@ -989,7 +1026,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Quién es Viru, la mujer que acompañó al Indio Solari durante 45 años",
@@ -1013,7 +1051,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Incertidumbre, inseguridad y hartazgo con la política: qué dicen los peruanos a horas del balotaje",
@@ -1037,7 +1076,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "¡Mirá en vivo Canal E!: toda la información económica",
@@ -1061,7 +1101,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El bitcoin perforó los US$ 60.000 y tocó su nivel más bajo desde 2024",
@@ -1085,7 +1126,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Encuesta de la UIA: cuatro de cada diez industrias sufrieron caídas de producción y ventas",
@@ -1109,7 +1151,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El Club Político Argentino reclamó respetar los mecanismos de selección de jueces: \"Necesitamos jueces idóneos\"",
@@ -1133,7 +1176,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El dólar oficial cerró la semana al alza y alcanzó los $1.460",
@@ -1157,7 +1201,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Empleo en Estados Unidos: el crecimiento laboral reaviva el debate sobre consumo, proteccionismo y desarrollo económico",
@@ -1181,7 +1226,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El oro pierde todas las ganancias del año ante la expectativa de nuevas subas de tasas en EE.UU.",
@@ -1205,7 +1251,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Roberto Bacman: \"Patricia Bullrich no es una militante más de La Libertad Avanza, sino que es una socia estratégica\"",
@@ -1229,7 +1276,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Indio Solari",
@@ -1253,7 +1301,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Lionel Messi",
@@ -1277,7 +1326,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Multitudinaria misa ricotera en Plaza de Mayo",
@@ -1301,7 +1351,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Messi despidió al Indio Solari y salió a la luz un audio que el músico nunca llegó a enviarle",
@@ -1325,7 +1376,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El último adiós al Indio Solari no será en el Congreso",
@@ -1349,7 +1401,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Adiós al Indio Solari",
@@ -1373,7 +1426,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Donde quiera que estés",
@@ -1397,7 +1451,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La venganza será terrible",
@@ -1421,7 +1476,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Otra vez cerca de 500 puntos",
@@ -1445,7 +1501,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La hidrovía del Paraná más cerca de la privatización",
@@ -1469,7 +1526,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La pesca ilegal extranjera avanza",
@@ -1493,7 +1551,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Caídas en producción, ventas y empleo",
@@ -1517,7 +1576,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Un policía mató a un adolescente de 16 años en un presunto intento de robo",
@@ -1541,7 +1601,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Cultura y Espectáculos",
@@ -1565,7 +1626,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Una multitud despide al Indio Solari en Plaza de Mayo y diversos puntos del país",
@@ -1589,7 +1651,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "PorRodrigo Núñez",
@@ -1613,7 +1676,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Las mejores fotos de la despedida del Indio Solari en Plaza de Mayo",
@@ -1637,7 +1701,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Una despedida: el Indio vence al tiempo",
@@ -1661,7 +1726,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "PorMarta Dillon",
@@ -1685,7 +1751,58 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
+  },
+  {
+    "titulo_representativo": "Elecciones 2027",
+    "cantidad_articulos": 1,
+    "medios": [
+      "El Destape"
+    ],
+    "tendencias_cubren": [
+      "K"
+    ],
+    "blind_spot": [
+      "C",
+      "L"
+    ],
+    "articulos": [
+      {
+        "titulo": "Elecciones 2027",
+        "link": "https://www.eldestapeweb.com/tag/elecciones-2027",
+        "imagen": "https://www.eldestapeweb.com/img/estructura/og_image.jpg",
+        "publicado": "",
+        "medio": "El Destape",
+        "tendencia": "K"
+      }
+    ],
+    "tema": "General"
+  },
+  {
+    "titulo_representativo": "Macri cruzó a Milei en medio de la polémica por el pliego de Michelli",
+    "cantidad_articulos": 1,
+    "medios": [
+      "El Destape"
+    ],
+    "tendencias_cubren": [
+      "K"
+    ],
+    "blind_spot": [
+      "C",
+      "L"
+    ],
+    "articulos": [
+      {
+        "titulo": "Macri cruzó a Milei en medio de la polémica por el pliego de Michelli",
+        "link": "https://www.eldestapeweb.com/politica/macri-cruzo-milei-caso-pliego-michelli-no-manosear-202665211340",
+        "imagen": "https://cdn.eldestapeweb.com/eldestape/062026/1780705162028.jpg?&cw=1200&ch=675",
+        "publicado": "",
+        "medio": "El Destape",
+        "tendencia": "K"
+      }
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Reforma laboral",
@@ -1709,7 +1826,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "La CGT evalúa un nuevo paro general por la implementación de la reforma laboral",
@@ -1733,55 +1851,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
-  },
-  {
-    "titulo_representativo": "Seguimiento Minuto A Minuto",
-    "cantidad_articulos": 1,
-    "medios": [
-      "El Destape"
     ],
-    "tendencias_cubren": [
-      "K"
-    ],
-    "blind_spot": [
-      "C",
-      "L"
-    ],
-    "articulos": [
-      {
-        "titulo": "Seguimiento Minuto A Minuto",
-        "link": "https://www.eldestapeweb.com/tag/seguimiento-minuto-a-minuto",
-        "imagen": "https://www.eldestapeweb.com/img/estructura/og_image.jpg",
-        "publicado": "",
-        "medio": "El Destape",
-        "tendencia": "K"
-      }
-    ]
-  },
-  {
-    "titulo_representativo": "En la previa a su acto en Santa Fe, Macri se mostro con Pullaro",
-    "cantidad_articulos": 1,
-    "medios": [
-      "El Destape"
-    ],
-    "tendencias_cubren": [
-      "K"
-    ],
-    "blind_spot": [
-      "C",
-      "L"
-    ],
-    "articulos": [
-      {
-        "titulo": "En la previa a su acto en Santa Fe, Macri se mostro con Pullaro",
-        "link": "https://www.eldestapeweb.com/politica/milei-avanza-justicia-pliegos-expusieron-interna-bullrich-20266573150",
-        "imagen": "https://cdn.eldestapeweb.com/eldestape/062026/1780692334856.jpeg?&cw=1200&ch=675",
-        "publicado": "",
-        "medio": "El Destape",
-        "tendencia": "K"
-      }
-    ]
+    "tema": "General"
   },
   {
     "titulo_representativo": "Un economista de consulta de Milei criticó al Gobierno por falta de un plan microeconómico",
@@ -1805,7 +1876,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "TiempoArgentino",
@@ -1829,7 +1901,8 @@
         "medio": "Tiempo Argentino",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "SUMATE A LA COMUNIDAD DE ÁMBITO",
@@ -1853,7 +1926,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El S&P Merval sufrió su caída semanal más importante desde febrero y el riesgo país rozó los 500 puntos",
@@ -1877,7 +1951,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Las reservas bajaron más de u$s500 millones, pese a otra compra del BCRA: qué factores explicaron la baja",
@@ -1901,7 +1976,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Murió el Indio Solari, un músico que marcó una época del rock nacional",
@@ -1925,7 +2001,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Masiva liquidación en Wall Street: el Nasdaq se hundió más de 4% y tuvo su peor día en más de un año",
@@ -1949,7 +2026,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Confirmado: la despedida del Indio Solari será el sábado 6 de junio",
@@ -1973,7 +2051,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Crisis en la industria: casi el 45% de las empresas tuvo dificultades para afrontar pagos en abril",
@@ -1997,7 +2076,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Mora récord en los hogares: advierten que las soluciones rápidas pueden afectar más al crédito",
@@ -2021,7 +2101,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Cuadernos adulterados: ordenan nueva pericia caligráfica sobre Bacigalupo y apuntan a otras personas",
@@ -2045,7 +2126,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El dólar oficial registró su segundo mayor aumento semanal del año y alcanzó los $1.460",
@@ -2069,7 +2151,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El mundo despide al Indio Solari: mensajes de la política, artistas y clubes de fútbol",
@@ -2093,7 +2176,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "¿Efecto cascada? Tras el revés en el Senado, el oficialismo percibe más derrotas en el recinto",
@@ -2117,7 +2201,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Encuesta exclusiva.Punto de inflexión: cómo impacta la economía en el humor social y a qué dirigentes avalan los argentinos",
@@ -2141,7 +2226,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Inauguración.Empezó a operar en Bahía Blanca una inversión clave para el crecimiento del gas de Vaca Muerta",
@@ -2165,7 +2251,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Opinión.El enigma Israel: la economía que vuela a pesar de la guerra y la oportunidad para Argentina",
@@ -2189,31 +2276,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
-  },
-  {
-    "titulo_representativo": "Sobre 55 hectáreas.La principal productora de aluminio de la Argentina construirá un nuevo parque solar",
-    "cantidad_articulos": 1,
-    "medios": [
-      "El Cronista"
     ],
-    "tendencias_cubren": [
-      "C"
-    ],
-    "blind_spot": [
-      "K",
-      "L"
-    ],
-    "articulos": [
-      {
-        "titulo": "Sobre 55 hectáreas.La principal productora de aluminio de la Argentina construirá un nuevo parque solar",
-        "link": "https://www.cronista.com/negocios/la-principal-productora-de-aluminio-de-la-argentina-construira-un-nuevo-parque-solar/",
-        "imagen": "https://www.cronista.com/resizer/v2/KIXGY4EMVNDMNBNIZ4COUNZ74A.jpg?auth=273a6806da83b9eff62812e5bff4ed76256d82a5278b77587b8b7534ef1936b1&height=630&width=1200&quality=70&smart=true",
-        "publicado": "",
-        "medio": "El Cronista",
-        "tendencia": "C"
-      }
-    ]
+    "tema": "General"
   },
   {
     "titulo_representativo": "El futuro cambiario.Cuánto tiene que subir el dólar para que se sostenga el carry trade: las estrategias recomendadas",
@@ -2237,10 +2301,11 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
-    "titulo_representativo": "Bancos vs. Alyc.La polémica estalló en la City por la liberación de los endosos de Echeq: qué pasó, la reacción de CNV y la pata fiscal",
+    "titulo_representativo": "Sobre 55 hectáreas.La principal productora de aluminio de la Argentina construirá un nuevo parque solar",
     "cantidad_articulos": 1,
     "medios": [
       "El Cronista"
@@ -2254,14 +2319,15 @@
     ],
     "articulos": [
       {
-        "titulo": "Bancos vs. Alyc.La polémica estalló en la City por la liberación de los endosos de Echeq: qué pasó, la reacción de CNV y la pata fiscal",
-        "link": "https://www.cronista.com/finanzas-mercados/la-polemica-estallo-en-la-city-por-la-liberacion-de-los-endosos-de-echeq-que-paso-la-reaccion-de-cnv-y-la-pata-fiscal/",
-        "imagen": "https://www.cronista.com/resizer/v2/2DY763Z33NF7FEGTGC3E4FPO7A.jpg?auth=93c55f4015e166fa2c3cad04776b753f99a08232d099255ed269de0a7de862e7&height=630&width=1200&quality=70&smart=true",
+        "titulo": "Sobre 55 hectáreas.La principal productora de aluminio de la Argentina construirá un nuevo parque solar",
+        "link": "https://www.cronista.com/negocios/la-principal-productora-de-aluminio-de-la-argentina-construira-un-nuevo-parque-solar/",
+        "imagen": "https://www.cronista.com/resizer/v2/KIXGY4EMVNDMNBNIZ4COUNZ74A.jpg?auth=273a6806da83b9eff62812e5bff4ed76256d82a5278b77587b8b7534ef1936b1&height=630&width=1200&quality=70&smart=true",
         "publicado": "",
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "¿Te parece que es conveniente seguir apostando al carry trade pese a la suba del dólar?",
@@ -2285,7 +2351,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Inversiones.Los Cedear con mejor desempeño acumulado que siguen de cerca los inversores: cuáles lideran los rankings y por qué",
@@ -2309,7 +2376,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Lanzamientos.Toyota espera un repunte del mercado automotor, pero advierte cuál será la clave",
@@ -2333,7 +2401,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Últimas noticias",
@@ -2357,10 +2426,11 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
-    "titulo_representativo": "Inversión.Con una inversión de u$s 85 millones, Aeroparque se amplía y cerrará dos días para renovar su pista",
+    "titulo_representativo": "Bancos vs. Alyc.La polémica estalló en la City por la liberación de los endosos de Echeq: qué pasó, la reacción de CNV y la pata fiscal",
     "cantidad_articulos": 1,
     "medios": [
       "El Cronista"
@@ -2374,14 +2444,40 @@
     ],
     "articulos": [
       {
-        "titulo": "Inversión.Con una inversión de u$s 85 millones, Aeroparque se amplía y cerrará dos días para renovar su pista",
-        "link": "https://www.cronista.com/negocios/con-una-inversion-de-us-85-millones-aeroparque-se-amplia-y-cerrara-dos-dias-para-renovar-su-pista/",
-        "imagen": "https://www.cronista.com/resizer/v2/CDK4EDCCCZCWHFAUMNGHK37234.jpeg?auth=87650d6ee567fa281931f63407f989a2b372030082d990b4c2da15be6c28d057&height=630&width=1200&quality=70&smart=true",
+        "titulo": "Bancos vs. Alyc.La polémica estalló en la City por la liberación de los endosos de Echeq: qué pasó, la reacción de CNV y la pata fiscal",
+        "link": "https://www.cronista.com/finanzas-mercados/la-polemica-estallo-en-la-city-por-la-liberacion-de-los-endosos-de-echeq-que-paso-la-reaccion-de-cnv-y-la-pata-fiscal/",
+        "imagen": "https://www.cronista.com/resizer/v2/2DY763Z33NF7FEGTGC3E4FPO7A.jpg?auth=93c55f4015e166fa2c3cad04776b753f99a08232d099255ed269de0a7de862e7&height=630&width=1200&quality=70&smart=true",
         "publicado": "",
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
+  },
+  {
+    "titulo_representativo": "Financial Times.El precio del imperio: la deuda que Trump no puede pagar",
+    "cantidad_articulos": 1,
+    "medios": [
+      "El Cronista"
+    ],
+    "tendencias_cubren": [
+      "C"
+    ],
+    "blind_spot": [
+      "K",
+      "L"
+    ],
+    "articulos": [
+      {
+        "titulo": "Financial Times.El precio del imperio: la deuda que Trump no puede pagar",
+        "link": "https://www.cronista.com/financial-times/el-precio-del-imperio-la-deuda-que-trump-no-puede-pagar/",
+        "imagen": "https://www.cronista.com/resizer/v2/EJJB3KFBCJF33KLTMCXHDOIWYU.png?auth=8a78c6a91c33f19d780c0de677ab7f5c37eb2e3aba7d2c935310e28b9c4231ff&height=630&width=1200&quality=70&focal=586%2C361",
+        "publicado": "",
+        "medio": "El Cronista",
+        "tendencia": "C"
+      }
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Idea Management.De jugador a dirigente: la receta de la Brujita Verón",
@@ -2405,7 +2501,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Martín Fierro.Guillermo Laborda ganó el premio al mejor columnista económico",
@@ -2429,7 +2526,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Crédito para la producción.Créditos para el campo: Banco Nación ofreció tasas desde 12% y apuntó a superar los US$ 500 millones",
@@ -2453,6 +2551,7 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   }
 ]
