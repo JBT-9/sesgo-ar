@@ -225,12 +225,9 @@ function renderCard(g) {
       : `<span class="chip" style="border-color:${color}20;color:${color}">${m}</span>`;
   }).join("");
 
-  const ausentesHTML = (blind || []).map(b => {
-    const label = b.length <= 1
-      ? ({ K: "medios kirchneristas", C: "medios del centro", L: "medios liberales" }[b] || b)
-      : b;
-    return `<span class="chip chip-ausente">👁 Ausente en ${label}</span>`;
-  }).join("");
+  const ausentesHTML = (blind && blind.length > 0)
+    ? `<span class="chip chip-ausente">👁 Ausente en: ${blind.map(b => b.length <= 1 ? ({K: "medios kirchneristas", C: "medios del centro", L: "medios liberales"}[b] || b) : b).join(", ")}</span>`
+    : "";
 
   const dataAttrs = `data-tendencias="${tend.join(",")}" data-multi="${medios.length>1}" data-ausente="${blind.length>0 && medios.length>1}"`;
 
