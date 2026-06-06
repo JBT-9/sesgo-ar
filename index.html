@@ -358,19 +358,19 @@ async function cargarDatos() {
     `;
 
     // Agrupar portada por tema
-    const TEMAS_ORDEN = [Política, Economía, Judicial, Seguridad, Internacional, Sociedad, Cultura, Deportes, General];
+    const TEMAS_ORDEN = ["Política", "Economía", "Judicial", "Seguridad", "Internacional", "Sociedad", "Cultura", "Deportes", "General"];
     const porTema = {};
     for (const g of portada) {
-      const tema = g.tema || General;
+      const tema = g.tema || "General";
       if (!porTema[tema]) porTema[tema] = [];
       porTema[tema].push(g);
     }
-    let portadaHTML = ;
+    let portadaHTML = "";
     for (const tema of TEMAS_ORDEN) {
       if (!porTema[tema] || porTema[tema].length === 0) continue;
-      portadaHTML += `<div class=section-header><span class=section-name>${tema}</span><div class=section-line></div></div><div class=cards-grid>${porTema[tema].map(g => renderCard(g)).join()}</div>`;
+      portadaHTML += `<div class="section-header"><span class="section-name">${tema}</span><div class="section-line"></div></div><div class="cards-grid">${porTema[tema].map(g => renderCard(g)).join("")}</div>`;
     }
-    document.getElementById(cards-portada).innerHTML = portadaHTML || `<div class=no-results>No hay noticias relevantes por ahora.</div>`;
+    document.getElementById("cards-portada").innerHTML = portadaHTML || `<div class="no-results">No hay noticias relevantes por ahora.</div>`;
 
     document.getElementById("cards-todas").innerHTML = conScore.map(({g}) =>
       g.cantidad_articulos > 1 ? renderCard(g) : renderSingleRow(g)
