@@ -13,7 +13,12 @@
       "K",
       "L"
     ],
-    "blind_spot": [],
+    "blind_spot": [
+      "Infobae",
+      "Clarín",
+      "El Cronista",
+      "Página 12"
+    ],
     "articulos": [
       {
         "titulo": "Murió el Indio Solari, en vivo: reacciones y los mensajes de despedida al líder Los Redonditos de Ricota",
@@ -61,7 +66,12 @@
       "L"
     ],
     "blind_spot": [
-      "C"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -94,7 +104,12 @@
       "L"
     ],
     "blind_spot": [
-      "C"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -127,7 +142,12 @@
       "K"
     ],
     "blind_spot": [
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -160,7 +180,12 @@
       "K"
     ],
     "blind_spot": [
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -192,8 +217,12 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -226,7 +255,12 @@
       "K"
     ],
     "blind_spot": [
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -259,7 +293,12 @@
       "K"
     ],
     "blind_spot": [
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -290,8 +329,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -314,8 +358,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -338,8 +387,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -362,8 +416,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -386,8 +445,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -410,8 +474,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -434,8 +503,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -458,8 +532,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -482,8 +561,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -506,8 +590,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -530,8 +619,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -554,8 +648,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -578,8 +677,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -602,8 +706,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -626,8 +735,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -650,8 +764,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -674,8 +793,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -698,8 +822,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -722,8 +851,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -746,8 +880,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -770,8 +909,13 @@
       "L"
     ],
     "blind_spot": [
-      "C",
-      "K"
+      "Infobae",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -794,8 +938,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -818,8 +967,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -842,8 +996,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -866,8 +1025,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -890,8 +1054,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -914,8 +1083,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -938,8 +1112,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -962,8 +1141,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -986,8 +1170,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1010,8 +1199,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1034,8 +1228,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1058,8 +1257,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1082,8 +1286,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1106,8 +1315,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1130,8 +1344,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1154,8 +1373,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1178,8 +1402,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1202,8 +1431,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1226,8 +1460,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1250,8 +1489,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Ámbito",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1274,8 +1518,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1298,8 +1547,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1322,8 +1576,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1346,8 +1605,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1370,8 +1634,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1394,8 +1663,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1418,8 +1692,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1442,8 +1721,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1466,8 +1750,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1490,8 +1779,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1514,8 +1808,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1538,8 +1837,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1562,8 +1866,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1586,8 +1895,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1610,8 +1924,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1634,8 +1953,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1658,8 +1982,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1682,8 +2011,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1706,8 +2040,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1730,8 +2069,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1754,8 +2098,13 @@
       "K"
     ],
     "blind_spot": [
-      "C",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "El Cronista",
+      "Página 12"
     ],
     "articulos": [
       {
@@ -1778,8 +2127,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1802,8 +2156,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1826,8 +2185,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1850,8 +2214,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1874,8 +2243,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1898,8 +2272,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1922,8 +2301,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1946,8 +2330,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1970,8 +2359,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -1994,8 +2388,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2018,8 +2417,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2042,8 +2446,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "El Cronista",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2066,8 +2475,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2090,8 +2504,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2114,8 +2533,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2138,8 +2562,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2162,8 +2591,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2186,8 +2620,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2210,8 +2649,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2234,8 +2678,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2258,8 +2707,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2282,8 +2736,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2306,8 +2765,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2330,8 +2794,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2354,8 +2823,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
@@ -2378,8 +2852,13 @@
       "C"
     ],
     "blind_spot": [
-      "K",
-      "L"
+      "Infobae",
+      "La Nación",
+      "Clarín",
+      "Perfil",
+      "Ámbito",
+      "Página 12",
+      "El Destape"
     ],
     "articulos": [
       {
