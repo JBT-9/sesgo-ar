@@ -52,7 +52,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "El 'Indio' Solari murió a causa de un ACV hemorrágico sufrido en una piscina, según fiscal",
@@ -90,7 +91,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Mundial 2026, en vivo: Argentina volvió al primer puesto en el ranking FIFA y cómo sigue recuperación de Messi",
@@ -128,7 +130,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Dieron a conocer el resultado preliminar de la autopsia del Indio Solari: \"Un ACV no traumático\"",
@@ -166,7 +169,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Se conoció la causa de la muerte del Indio Solari: la autopsia confirma un ACV",
@@ -204,7 +208,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Judicial"
   },
   {
     "titulo_representativo": "Las últimas horas del Indio Solari: del accidente en su casa a la investigación judicial",
@@ -241,7 +246,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Judicial"
   },
   {
     "titulo_representativo": "Murió el Indio Solari: la Shell de Córdoba, los dolores dulces y la luna por copar",
@@ -279,7 +285,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Las mejores 8 frases del Indio Solari, histórico del rock argentino y de Los Redondos",
@@ -317,7 +324,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Restricciones de tránsito en CDMX durante el Mundial 2026: calles, horarios y rutas alternativas",
@@ -346,7 +354,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Perú 0-1 Haití EN VIVO HOY: minuto a minuto del partido amistoso en Miami por fecha FIFA 2026",
@@ -375,7 +384,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Colombia vs. Uruguay - EN VIVO  Liga de Naciones Femenina Conmebol: siga el minuto a minuto desde el Pascual Guerrero",
@@ -404,7 +414,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "EN VIVO |¿Qué está ocurriendo en el Metro, Metrobús y Tren Ligero de la Ciudad de México hoy 5 de junio? |",
@@ -433,7 +444,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Pensamiento crítico, la herramienta recomendada por una experta para reducir los riesgos digitales en adolescentes",
@@ -462,7 +474,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Buenos Aires celebra una 'misa ricotera' en despedida al 'Indio' Solari, de los Redondos",
@@ -491,7 +504,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Golpe al narco en Baja California: aseguran 150 kilos de metanfetamina tras operativo federal",
@@ -520,7 +534,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Hoy es noticia en el mundo (00:00 GMT)",
@@ -549,7 +564,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "La hija de Petro sale en defensa de James Rodríguez tras polémica por supuesto desplante",
@@ -578,7 +594,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Se suman extrabajadores de Mexicana de Aviación a manifestaciones en el marco del Mundial 2026",
@@ -607,7 +624,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "Estados Unidos y aliados latinoamericanos denunciaron intentos de derrocar al gobierno de Bolivia y ampliaron su apoyo a Rodrigo Paz",
@@ -636,7 +654,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "Gol de Haití tras error de André Carrillo en amistoso de Perú por fecha FIFA 2026",
@@ -665,7 +684,8 @@
         "medio": "Infobae",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Lázaro Báez fue internado por un cuadro de pulmonía y se agrava su estado de salud",
@@ -694,7 +714,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Javier Milei y sus medidas, en vivo: la aprobación del pliego de Michelli, Macri en Santa Fe y la nueva compra de dólares del Banco Central",
@@ -723,7 +744,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Otamendi: el defensor que hizo de la convicción su mayor fortaleza",
@@ -752,7 +774,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "A qué hora de EE.UU. juegan New York Knicks vs. San Antonio Spurs, hoy: transmisión en vivo de las Finales de la NBA",
@@ -781,7 +804,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Así son los drones diseñados por un exsoldado de EE.UU. que ayudarán a responder a tiroteos en las escuelas de Texas",
@@ -810,7 +834,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "El fuerte testimonio de Ivana Figueiras sobre el conflicto familiar con la actual pareja del padre de su hija",
@@ -839,7 +864,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "El Gobierno intenta comunicarse con la familia del Indio Solari y ofrece Tecnópolis como lugar para el velatorio",
@@ -868,7 +894,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "El imponente barco en el que se hospeda Franco Colapinto en Mónaco",
@@ -897,7 +924,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Qué dice la psicología de las personas que escriben a mano en lugar de usar su celular",
@@ -926,7 +954,8 @@
         "medio": "La Nación",
         "tendencia": "L"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Mezclar laurel con vinagre: para qué sirve y por qué recomiendan hacerlo",
@@ -955,7 +984,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "No tires los bidones en desuso: para qué sirven y por qué son un tesoro en casa",
@@ -984,7 +1014,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Robaban queso, carne y cigarrillos: desmantelan una red acusada en Nueva York de sustraer mercancía por casi 5 millones de dólares",
@@ -1013,7 +1044,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Mauricio Macri cuestionó las idas y vueltas de Milei con el nombramiento de jueces: \"No podemos manosear algo tan importante como el sistema judicial\"",
@@ -1042,7 +1074,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Inocente búsqueda de empleo",
@@ -1071,7 +1104,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Aventuras en el cine",
@@ -1100,7 +1134,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "El Gobierno intentó comunicarse con la familia del Indio Solari para organizar el funeral en Tecnópolis: \"No hemos tenido respuestas\"",
@@ -1129,7 +1164,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Los científicos crearon un reloj genético que predice cuándo va a morir una persona y también puede medir su edad biológica real",
@@ -1158,7 +1194,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "La misa ricotera copó la Plaza de Mayo para despedir al Indio Solari: \"Es algo inexplicable\"",
@@ -1187,7 +1224,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Líbano acusó a Irán de usarlo como \"moneda de cambio\" con Estados Unidos y lo instó a dejar de \"interferir\" en el país",
@@ -1216,7 +1254,8 @@
         "medio": "Clarín",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "El Indio Solari y el caso Walter Bulacio: el hecho de violencia policial que marcó a Los Redondos",
@@ -1245,7 +1284,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Si Charly es el Rey, el Indio es el cacique del rock",
@@ -1274,7 +1314,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Incertidumbre, inseguridad y hartazgo con la política: qué dicen los peruanos a horas del balotaje",
@@ -1303,7 +1344,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "¡Mirá en vivo Canal E!: toda la información económica",
@@ -1332,7 +1374,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El bitcoin perforó los US$ 60.000 y tocó su nivel más bajo desde 2024",
@@ -1361,7 +1404,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Encuesta de la UIA: cuatro de cada diez industrias sufrieron caídas de producción y ventas",
@@ -1390,7 +1434,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El Club Político Argentino reclamó respetar los mecanismos de selección de jueces: \"Necesitamos jueces idóneos\"",
@@ -1419,7 +1464,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Judicial"
   },
   {
     "titulo_representativo": "El dólar oficial cerró la semana al alza y alcanzó los $1.460",
@@ -1448,7 +1494,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Empleo en Estados Unidos: el crecimiento laboral reaviva el debate sobre consumo, proteccionismo y desarrollo económico",
@@ -1477,7 +1524,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El oro pierde todas las ganancias del año ante la expectativa de nuevas subas de tasas en EE.UU.",
@@ -1506,7 +1554,8 @@
         "medio": "Perfil",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Multitudinaria misa ricotera en Plaza de Mayo",
@@ -1535,7 +1584,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Messi despidió al Indio Solari y salió a la luz un audio que el músico nunca llegó a enviarle",
@@ -1564,7 +1614,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "El último adiós al Indio Solari no será en el Congreso",
@@ -1593,7 +1644,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Adiós al Indio Solari",
@@ -1622,7 +1674,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Donde quiera que estés",
@@ -1651,7 +1704,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "La venganza será terrible",
@@ -1680,7 +1734,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Seguridad"
   },
   {
     "titulo_representativo": "Otra vez cerca de 500 puntos",
@@ -1709,7 +1764,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El aguinaldo, para pagar deudas",
@@ -1738,7 +1794,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "La hidrovía del Paraná más cerca de la privatización",
@@ -1767,7 +1824,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "La pesca ilegal extranjera avanza",
@@ -1796,7 +1854,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Internacional"
   },
   {
     "titulo_representativo": "Caídas en producción, ventas y empleo",
@@ -1825,7 +1884,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Cultura y Espectáculos",
@@ -1854,7 +1914,8 @@
         "medio": "Página 12",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Una multitud despide al Indio Solari en Plaza de Mayo y diversos puntos del país",
@@ -1883,7 +1944,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Las mejores fotos de la despedida del Indio Solari en Plaza de Mayo",
@@ -1912,7 +1974,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Una despedida: el Indio vence al tiempo",
@@ -1941,7 +2004,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Sociedad"
   },
   {
     "titulo_representativo": "Macri cruzó a Milei en medio de la polémica por el pliego de Michelli",
@@ -1970,7 +2034,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "La CGT evalúa un nuevo paro general por la implementación de la reforma laboral",
@@ -1999,7 +2064,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Un economista de consulta de Milei criticó al Gobierno por falta de un plan microeconómico",
@@ -2028,7 +2094,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "La historia del partido inaugural de los Mundiales y el karma de Argentina",
@@ -2057,7 +2124,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Jugá al Desafío Mundialista de El Destape: el Mundial 2026 también lo podés ganar vos",
@@ -2086,7 +2154,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "Deportes"
   },
   {
     "titulo_representativo": "Una copa robada y un perro que fue héroe nacional: 60 años del Mundial de Inglaterra",
@@ -2115,7 +2184,8 @@
         "medio": "El Destape",
         "tendencia": "K"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "SUMATE A LA COMUNIDAD DE ÁMBITO",
@@ -2144,7 +2214,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "El S&P Merval sufrió su caída semanal más importante desde febrero y el riesgo país rozó los 500 puntos",
@@ -2173,7 +2244,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Las reservas bajaron más de u$s500 millones, pese a otra compra del BCRA: qué factores explicaron la baja",
@@ -2202,7 +2274,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Murió el Indio Solari, un músico que marcó una época del rock nacional",
@@ -2231,7 +2304,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Masiva liquidación en Wall Street: el Nasdaq se hundió más de 4% y tuvo su peor día en más de un año",
@@ -2260,7 +2334,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Confirmado: la despedida del Indio Solari será el sábado 6 de junio",
@@ -2289,7 +2364,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "Crisis en la industria: casi el 45% de las empresas tuvo dificultades para afrontar pagos en abril",
@@ -2318,7 +2394,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Mora récord en los hogares: advierten que las soluciones rápidas pueden afectar más al crédito",
@@ -2347,7 +2424,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Cuadernos adulterados: ordenan nueva pericia caligráfica sobre Bacigalupo y apuntan a otras personas",
@@ -2376,7 +2454,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "El dólar oficial registró su segundo mayor aumento semanal del año y alcanzó los $1.460",
@@ -2405,7 +2484,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El mundo despide al Indio Solari: mensajes de la política, artistas y clubes de fútbol",
@@ -2434,7 +2514,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Cultura"
   },
   {
     "titulo_representativo": "¿Efecto cascada? Tras el revés en el Senado, el oficialismo percibe más derrotas en el recinto",
@@ -2463,7 +2544,8 @@
         "medio": "Ámbito",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Encuesta exclusiva.Punto de inflexión: cómo impacta la economía en el humor social y a qué dirigentes avalan los argentinos",
@@ -2492,7 +2574,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Política"
   },
   {
     "titulo_representativo": "Inauguración.Empezó a operar en Bahía Blanca una inversión clave para el crecimiento del gas de Vaca Muerta",
@@ -2521,7 +2604,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Opinión.El enigma Israel: la economía que vuela a pesar de la guerra y la oportunidad para Argentina",
@@ -2550,7 +2634,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "El futuro cambiario.Cuánto tiene que subir el dólar para que se sostenga el carry trade: las estrategias recomendadas",
@@ -2579,7 +2664,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Sobre 55 hectáreas.La principal productora de aluminio de la Argentina construirá un nuevo parque solar",
@@ -2608,7 +2694,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "¿Te parece que es conveniente seguir apostando al carry trade pese a la suba del dólar?",
@@ -2637,7 +2724,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Inversiones.Los Cedear con mejor desempeño acumulado que siguen de cerca los inversores: cuáles lideran los rankings y por qué",
@@ -2666,7 +2754,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Lanzamientos.Toyota espera un repunte del mercado automotor, pero advierte cuál será la clave",
@@ -2695,7 +2784,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Bancos vs. Alyc.La polémica estalló en la City por la liberación de los endosos de Echeq: qué pasó, la reacción de CNV y la pata fiscal",
@@ -2724,7 +2814,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Financial Times.El precio del imperio: la deuda que Trump no puede pagar",
@@ -2753,7 +2844,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Idea Management.De jugador a dirigente: la receta de la Brujita Verón",
@@ -2782,7 +2874,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Martín Fierro.Guillermo Laborda ganó el premio al mejor columnista económico",
@@ -2811,7 +2904,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "Economía"
   },
   {
     "titulo_representativo": "Crédito para la producción.Créditos para el campo: Banco Nación ofreció tasas desde 12% y apuntó a superar los US$ 500 millones",
@@ -2840,7 +2934,8 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   },
   {
     "titulo_representativo": "Tokenización de activos.Furor en la Argentina: cómo anticiparse a las IPO de grandes empresas como SpaceX o OpenAI",
@@ -2869,6 +2964,7 @@
         "medio": "El Cronista",
         "tendencia": "C"
       }
-    ]
+    ],
+    "tema": "General"
   }
 ]

@@ -1,82 +1,104 @@
 import json
 import os
 import requests
+from urllib.parse import urlparse
 
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama3-8b-8192"
+GROQ_MODEL = "llama-3.1-8b-instant"
 
-def get_api_key():
-    key = os.environ.get("GROQ_API_KEY", "")
-    if not key:
-        raise ValueError("GROQ_API_KEY no encontrada.")
-    return key
+TEMAS_VALIDOS = {"Política", "Economía", "Judicial", "Seguridad", "Internacional", "Sociedad", "Cultura", "Deportes", "General"}
 
-def evaluar_grupo(titulos, key):
-    prompt = f"""Sos un analista de medios argentinos experto en detectar desinformación y manipulación mediática.
+# Mapeo de secciones de URL por medio
+URL_CATEGORIAS = {
+    "politica": "Política", "economia": "Economía", "economic": "Economía",
+    "judicial": "Judicial", "tribunales": "Judicial", "justicia": "Judicial",
+    "seguridad": "Seguridad", "policial": "Seguridad", "policiales": "Seguridad",
+    "internacional": "Internacional", "mundo": "Internacional",
+    "sociedad": "Sociedad", "salud": "Sociedad", "ciencia": "Sociedad",
+    "cultura": "Cultura", "espectaculos": "Cultura", "entretenimiento": "Cultura",
+    "deportes": "Deportes", "futbol": "Deportes", "deporte": "Deportes",
+}
 
-Te doy titulares sobre el mismo tema de distintos medios:
-{chr(10).join(f'- {t}' for t in titulos)}
+def tema_desde_url(url):
+    if not url:
+        return None
+    try:
+        path = urlparse(url).path.lower()
+        partes = [p for p in path.split("/") if p]
+        for parte in partes:
+            for keyword, tema in URL_CATEGORIAS.items():
+                if keyword in parte:
+                    return tema
+    except:
+        pass
+    return None
 
-Analizá y respondé SOLO con un JSON exactamente así, sin texto extra:
-{{
-  "relevancia": <número del 1 al 10, donde 10 es máxima importancia pública>,
-  "tema": "<una de: Política, Economía, Judicial, Seguridad, Internacional, Sociedad, Cultura, Deportes, General>",
-  "resumen": "<una oración de máximo 15 palabras describiendo de qué trata>",
-  "controversia": <true si hay contradicción evidente entre los titulares>,
-  "manipulacion": <true si la noticia parece usarse para instalar una narrativa, desviar atención, generar miedo o indignación con fines políticos, aunque el tema sea aparentemente mundano>
-}}"""
-
-    headers = {
-        "Authorization": f"Bearer {key}",
-        "Content-Type": "application/json",
-    }
-    body = {
-        "model": GROQ_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "temperature": 0.1,
-        "max_tokens": 200,
-    }
+def tema_desde_groq(titulo, key):
+    prompt = f'Categoría de esta noticia argentina: "{titulo}"\nOpciones: Política, Economía, Judicial, Seguridad, Internacional, Sociedad, Cultura, Deportes, General\nRespondé solo con una palabra.'
 
     try:
-        r = requests.post(GROQ_API_URL, headers=headers, json=body, timeout=15)
+        r = requests.post(
+            GROQ_API_URL,
+            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+            json={
+                "model": GROQ_MODEL,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": 0.0,
+                "max_tokens": 5,
+            },
+            timeout=10
+        )
         r.raise_for_status()
-        texto = r.json()["choices"][0]["message"]["content"].strip()
-        texto = texto.replace("```json", "").replace("```", "").strip()
-        return json.loads(texto)
-    except Exception as e:
-        return {"relevancia": 5, "tema": "General", "resumen": "", "controversia": False, "manipulacion": False}
+        respuesta = r.json()["choices"][0]["message"]["content"].strip()
+        for t in TEMAS_VALIDOS:
+            if t.lower() in respuesta.lower():
+                return t
+    except:
+        pass
+    return "General"
 
 def enriquecer_grupos():
-    print("\n=== Enriqueciendo grupos con Groq ===")
+    print("\n=== Clasificando grupos por tema ===")
 
     with open("grupos.json", encoding="utf-8") as f:
         grupos = json.load(f)
 
-    key = get_api_key()
+    key = os.environ.get("GROQ_API_KEY", "")
+    if not key:
+        print("ADVERTENCIA: GROQ_API_KEY no encontrada. Solo se usará clasificación por URL.")
+
+    desde_url = 0
+    desde_groq = 0
     total = len(grupos)
 
     for i, g in enumerate(grupos):
-        titulos = [a["titulo"] for a in g.get("articulos", [])]
-        if not titulos:
+        arts = g.get("articulos", [])
+        if not arts:
+            g["tema"] = "General"
             continue
 
-        resultado = evaluar_grupo(titulos, key)
-        g["relevancia_ia"] = resultado.get("relevancia", 5)
-        g["tema"] = resultado.get("tema", "General")
-        g["resumen"] = resultado.get("resumen", "")
-        g["controversia"] = resultado.get("controversia", False)
-        g["manipulacion"] = resultado.get("manipulacion", False)
+        # Intentar desde URL primero
+        tema = None
+        for art in arts:
+            tema = tema_desde_url(art.get("link", ""))
+            if tema:
+                desde_url += 1
+                break
 
-        flags = []
-        if resultado.get("controversia"): flags.append("⚡ contradicción")
-        if resultado.get("manipulacion"): flags.append("⚠️ manipulación")
-        flags_str = " ".join(flags)
-        print(f"  [{i+1}/{total}] ({resultado.get('relevancia','-')}/10) [{resultado.get('tema','')}] {g.get('resumen') or titulos[0][:55]} {flags_str}")
+        # Fallback a Groq
+        if not tema and key:
+            tema = tema_desde_groq(arts[0]["titulo"], key)
+            desde_groq += 1
+        elif not tema:
+            tema = "General"
+
+        g["tema"] = tema
+        print(f"  [{i+1}/{total}] [{'URL' if tema_desde_url(arts[0].get('link','')) else 'IA'}] [{tema}] {arts[0]['titulo'][:60]}")
 
     with open("grupos.json", "w", encoding="utf-8") as f:
         json.dump(grupos, f, ensure_ascii=False, indent=2)
 
-    print(f"\nListo. {total} grupos enriquecidos.")
+    print(f"\nListo. {total} grupos clasificados ({desde_url} por URL, {desde_groq} por Groq).")
 
 if __name__ == "__main__":
     enriquecer_grupos()
